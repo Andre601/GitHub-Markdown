@@ -379,7 +379,7 @@ GitHub provides `syntax highlighting` support which means that the content withi
         }
         ```
 
-## Table
+## Tables
 Making tables in Markdown is fairly simple.
 
 !!! info

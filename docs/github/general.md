@@ -310,6 +310,7 @@ Images can be added the same was as links (including reference link-style), but 
         
         ![github_text](https://Andre601.github.io/GitHub-Markdown/assets/img/github-text.png)
 
+----
 ## Code
 GitHub supports inline code and code blocks with syntax highlighting.
 
@@ -379,6 +380,7 @@ GitHub provides `syntax highlighting` support which means that the content withi
         }
         ```
 
+----
 ## Tables
 Making tables in Markdown is fairly simple.
 

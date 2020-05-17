@@ -1,0 +1,12 @@
+.task-list-item input[type="checkbox"] + .task-list-indicator::before {
+  background-color: #eee !important;
+  left: -1em !important;
+}
+
+.task-list-control{
+  padding: 0em !important;
+}
+
+.task-list-item input[type="checkbox"]:checked + .task-list-indicator::before{
+  left: -1em !important;
+}

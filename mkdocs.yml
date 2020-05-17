@@ -35,6 +35,7 @@ theme:
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#favicon
   favicon: 'assets/img/logo.png'
+  logo: 'assets/img/logo.png'
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#color-palette
   palette:
@@ -48,7 +49,6 @@ theme:
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#icons
   icon:
-    logo: 'fontawesome/brands/github'
     repo: 'fontawesome/brands/github'
 
 #

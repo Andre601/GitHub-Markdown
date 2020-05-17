@@ -8,10 +8,6 @@
 [emoji-cheat-sheet.com]: https://www.webfx.com/tools/emoji-cheat-sheet/
 
 # General
-
-!!! info "Note"
-    Don't mind the "Table of contents" on the right side not showing all headers. This is a [MkDocs limitation]!
-
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
 
 - [Headers](#headers)

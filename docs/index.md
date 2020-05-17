@@ -1,14 +1,26 @@
-# MkDocs Template
-Welcome to the MkDocs Template Documentation.
+# GitHub Markdown
+Welcome to the GitHub Markdown site!
 
-This is nothing more than a basic page to start using MkDocs!
+This site aims to list all available options of formatting, that can be used in GitHub.  
+GitHub offers multiple places, where you can use the normal markdown formatting, but also their GitHub flavourited Markdown.
 
-## Getting started
-To start, clone the Repoitory (Click the "Use this template" button) and edit this file here.  
-You can also just add new files and alter some settings.
+Known places for using Markdown are:
 
-More can be found on the [README.md](https://github.com/Andre601/mkdocs-template/blob/master/README.md)
+- Any Markdown (`.md`) file on a GitHub repository.
+- Wiki pages of a GitHub repository.
+- Issues or Pull requests in a GitHub repository.
 
-## Manual Deploy
-To manually deploy the sites from your local repository, use the `gh-deploy` command from MkDocs.  
-Just make sure that you have set a GitHub repository in the `mkdocs.yml` to push towards.
+To simplify the search for specific features or to more easly answer the question "What can I use in x?" is this site split up into several categories to show you more easy what can and can't be used on specific parts of GitHub.
+
+## Pages
+
+- [General](github/general)  
+These formatting options can be used across all places where GitHub supports markdown.
+- [Issues/Pull requests](github/issues-pull-requests)  
+All supported options for Issues and Pull requests.
+- [Wiki](github/wiki)  
+All supported options for the wiki.
+
+## Note about this site and styling
+This page uses [MkDocs] together with the [PyMdown extensions].  
+PyMdown extensions provides certain features that help us to emulate some of GitHub's features like task lists. That said is the style often not the same so it may look different to what GitHub offers. If the style or behaviour is different on GitHub will we mention it.

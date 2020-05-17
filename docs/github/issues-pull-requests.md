@@ -70,7 +70,7 @@ You can link to issues and Pull requests in various ways.
         ```
     === "Result"
         Full URL:  
-        <!-- We cheat a bit here... MagicLinks limitation --> #2  
+        https://github.com/Andre601/GitHub-Markdown/pulls/#2  
         https://github.com/jlord/sheetsee.js/issues/26
         
         Issue/Pull request number (Own repository):  

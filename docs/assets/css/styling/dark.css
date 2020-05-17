@@ -255,3 +255,7 @@ td.linenos div.linenodiv {
 .md-typeset .tabbed-set > label {
     color: #777 !important;
 }
+
+.md-sidebar--secondary {
+  display: none;
+}

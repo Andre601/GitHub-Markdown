@@ -58,7 +58,8 @@ You can link to issues and Pull requests in various ways.
     === "Markdown"
         ```
         Full URL:  
-        https://github.com/Andre601/GitHub-Markdown/pulls/2  
+        (Don't mind the number showing as `!2`. This is caused by [MagicLink]. GitHub usually displays `#2`)  
+        https://github.com/Andre601/GitHub-Markdown/pull/2  
         https://github.com/jlord/sheetsee.js/issues/26
         
         Issue/Pull request number (Own repository):  
@@ -70,7 +71,8 @@ You can link to issues and Pull requests in various ways.
         ```
     === "Result"
         Full URL:  
-        https://github.com/Andre601/GitHub-Markdown/pulls/#2  
+        (Don't mind the number showing as `!2`. This is caused by [MagicLink]. GitHub usually displays `#2`)  
+        https://github.com/Andre601/GitHub-Markdown/pull/2  
         https://github.com/jlord/sheetsee.js/issues/26
         
         Issue/Pull request number (Own repository):  

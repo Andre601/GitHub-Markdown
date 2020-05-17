@@ -16,10 +16,10 @@ To simplify the search for specific features or to more easly answer the questio
 
 - [General](github/general)  
 These formatting options can be used across all places where GitHub supports markdown.
-- [Wiki](github/wiki)  
-All supported options for the wiki.
 - [Issues/Pull requests](github/issues-pull-requests)  
 All supported options for Issues and Pull requests.
+- [Wiki](github/wiki)  
+All supported options for the wiki.
 
 ## Note about this site and styling
 This page uses [MkDocs] together with the [PyMdown extensions].  

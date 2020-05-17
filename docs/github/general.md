@@ -5,6 +5,8 @@
 
 [github_logo]: https://Andre601.github.io/GitHub-Markdown/assets/img/github.png
 
+[emoji-cheat-sheet.com]: https://www.webfx.com/tools/emoji-cheat-sheet/
+
 # General
 
 !!! info "Note"
@@ -34,6 +36,7 @@ This page lists all features that can be used across all places on GitHub, which
     - [Code Block](#code-block)
         - [Syntax highlighting](#syntax-highlighting)
 - [Tables](#tables)
+- [Emojis](#emojis)
 
 ----
 ## Headers
@@ -295,7 +298,7 @@ You can use the same reference link at multiple places and use `[text][reference
         [Reference links][Link] can be used like that to link to sites like [GitHub]!
 
 ### Image
-Images can be added the same was as links (including reference link-style), but have an exclamation mark (`!`) before them.
+Images can be added the same way as links (including reference link-style), but have an exclamation mark (`!`) before them.
 
 !!! info
     === "Markdown"
@@ -418,3 +421,26 @@ Making tables in Markdown is fairly simple.
         | Titles  | are                    | always    | centered      |
         | ------- |:---------------------- |:---------:| -------------:|
         | default | Left (Same as default) | Centered  | Right         |
+
+----
+## Emojis
+GitHub allows to render emojis.  
+A emoji is defined using a starting colon (`:`) followed by any alphanummerical text, hyphens (`-`) and underscores (`_`) amd ends with anothor colon.
+
+All available Emojis can be found on http://Emoji-cheat-sheet.com.
+
+!!! info
+    === "Markdown"
+        ```
+        Valid emoji:  
+        :smile:
+        
+        Invalid emoji:
+        :some emoji:
+        ```
+    === "Result"
+        Valid emoji:  
+        :smile:
+        
+        Invalid emoji:  
+        :some emoji:

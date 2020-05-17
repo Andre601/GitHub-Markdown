@@ -34,7 +34,7 @@ theme:
   #custom_dir: 'theme'
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#favicon
-  favicon: 'assets/images/favicon.png'
+  favicon: 'assets/img/logo.png'
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#color-palette
   palette:

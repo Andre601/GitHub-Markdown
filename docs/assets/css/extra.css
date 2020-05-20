@@ -1,2 +1,4 @@
 @import "extensions/tabbed.css";
 @import "extensions/tasklist.css";
+
+@import "styling/toc-fix.css";

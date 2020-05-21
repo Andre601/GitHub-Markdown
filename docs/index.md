@@ -1,3 +1,6 @@
+[MkDocs]: https://www.mkdocs.org
+[PyMdown extensions]: https://facelessuser.github.io/pymdown-extensions/
+
 # GitHub Markdown
 Welcome to the GitHub Markdown site!
 

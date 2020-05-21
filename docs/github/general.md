@@ -48,6 +48,7 @@ Headers are larger text like shown above and also allow you to link to it, when 
         ##### H5 Header
         ###### H6 Header
         
+        ----
         Alternative Headers (H1 and H2 only)
         
         Alt H1 Header

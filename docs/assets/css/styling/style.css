@@ -1,3 +1,7 @@
+body a {
+  color: #3498db;
+}
+
 .md-sidebar--secondary {
   display: none;
 }

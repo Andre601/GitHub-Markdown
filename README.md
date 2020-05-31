@@ -1,5 +1,5 @@
 # GitHub Markdown
-> Website: https://Andre601.github.io/GitHub-Markdown
+> Website: https://github.andre601.com/GitHub-Markdown
 
 GitHub has a lot of formatting options with Markdown. This can be your basic formatting like **bold**, *italic* or similar.  
 But there are also some formatting options that aren't documented but still available.

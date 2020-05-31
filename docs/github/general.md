@@ -1,11 +1,8 @@
-[MkDocs limitation]: https://github.com/facelessuser/pymdown-extensions/issues/940#issuecomment-629638717
-
+<!-- We have the links here because MkDocs doesn't like indended reference links -->
 [Link]: https://google.com
 [GitHub]: https://github.com
 
-[github_logo]: https://Andre601.github.io/GitHub-Markdown/assets/img/github.png
-
-[emoji-cheat-sheet.com]: https://www.webfx.com/tools/emoji-cheat-sheet/
+[github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
@@ -301,15 +298,15 @@ Images can be added the same way as links (including reference link-style), but 
 !!! info
     === "Markdown"
         ```
-        [github_logo]: https://Andre601.github.io/GitHub-Markdown/assets/img/github.png
+        [github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
         
         ![name][github_logo]  
-        ![github_text](https://Andre601.github.io/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
         ```
     === "Result"
         ![name][github_logo]
         
-        ![github_text](https://Andre601.github.io/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
 
 ----
 ## Code
@@ -350,7 +347,7 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
         hello world
         ```
 
-<!-- ``` Using this to get rid of formatting issues. -->
+<!-- ``` Using this to get rid of formatting issues in certain text editors. -->
 
 #### Syntax highlighting
 GitHub provides `syntax highlighting` support which means that the content within a codeblock can be colorized, depending on what coding language was selected.

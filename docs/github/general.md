@@ -200,6 +200,7 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
+        ---- <!-- We use this to have the below list separated -->
         1. To indend an entry...
             1. ...add 4 spaces before it.
         ```
@@ -208,6 +209,7 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
+        ---- <!-- We use this to have the below list separated -->
         1. To indend an entry...
             1. ...add 4 spaces before it.
 
@@ -220,8 +222,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ---- <!-- visual separation -->
-        
+        ---- <!-- We use this to have the below list separated -->
         * Because it is
         * unordered.
         ```
@@ -229,8 +230,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ----
-        
+        ---- <!-- We use this to have the below list separated -->
         * Because it is
         * unordered.
 

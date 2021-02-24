@@ -2,7 +2,7 @@
 [Link]: https://google.com
 [GitHub]: https://github.com
 
-[github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
+[github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
@@ -200,18 +200,20 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         1. To indend an entry...
-            1. ...add 4 spaces before it.
+            1. ...add 2 spaces before it.
         ```
     === "Result"
         1. This is the first entry.
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         1. To indend an entry...
-            1. ...add 4 spaces before it.
+            1. ...add 2 spaces before it.
 
 ### Unordered
 The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (`*`) or a hyphen/dash (`-`)
@@ -222,7 +224,8 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         * Because it is
         * unordered.
         ```
@@ -230,13 +233,14 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         * Because it is
         * unordered.
 
 ### Tasks
 This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
-The "check" an entry, will you only need to replace the space in between the brackets with an x.
+To "check" an entry, will you only need to replace the space in between the brackets with an x.
 
 Note that MkDocs doesn't provide such a system by default, so we use PyMdown's Tasklist extension to simulate a similar behaviour.
 
@@ -255,6 +259,9 @@ Note that MkDocs doesn't provide such a system by default, so we use PyMdown's T
         - [x] Buy milk
         - [x] Make laundry
         - [ ] Take over the world
+
+#### Note about mixed lists
+You can mix the different list types, but keep in mind that you will need to use 3 or 4 spaces to indent a List of a different type.
 
 ----
 ## Links
@@ -298,15 +305,15 @@ Images can be added the same way as links (including reference link-style), but 
 !!! info
     === "Markdown"
         ```
-        [github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
+        [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
         
         ![name][github_logo]  
-        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
         ```
     === "Result"
         ![name][github_logo]
         
-        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
 
 ----
 ## Code

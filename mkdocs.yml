@@ -46,7 +46,7 @@ theme:
   # https://squidfunk.github.io/mkdocs-material/getting-started/#feature-flags
   features:
     #- instant
-    - tabs
+    - navigation.tabs
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#icons
   icon:

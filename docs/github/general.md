@@ -2,7 +2,7 @@
 [Link]: https://google.com
 [GitHub]: https://github.com
 
-[github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
+[github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
@@ -303,15 +303,15 @@ Images can be added the same way as links (including reference link-style), but 
 !!! info
     === "Markdown"
         ```
-        [github_logo]: https://github.andre601.com/GitHub-Markdown/assets/img/github.png
+        [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
         
         ![name][github_logo]  
-        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
         ```
     === "Result"
         ![name][github_logo]
         
-        ![github_text](https://github.andre601.com/GitHub-Markdown/assets/img/github-text.png)
+        ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
 
 ----
 ## Code

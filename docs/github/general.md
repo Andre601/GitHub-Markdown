@@ -224,7 +224,8 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         * Because it is
         * unordered.
         ```
@@ -232,7 +233,8 @@ The unordered list has the same behaviour as the ordered list, with the differen
         - This list
         - doesn't use numbers.
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         * Because it is
         * unordered.
 

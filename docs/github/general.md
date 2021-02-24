@@ -200,18 +200,20 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         1. To indend an entry...
-            1. ...add 4 spaces before it.
+            1. ...add 2 spaces before it.
         ```
     === "Result"
         1. This is the first entry.
         2. This is the second one.
         4. The numbers don't even have to make sense!
         
-        ---- <!-- We use this to have the below list separated -->
+        ----
+        
         1. To indend an entry...
-            1. ...add 4 spaces before it.
+            1. ...add 2 spaces before it.
 
 ### Unordered
 The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (`*`) or a hyphen/dash (`-`)
@@ -255,6 +257,9 @@ Note that MkDocs doesn't provide such a system by default, so we use PyMdown's T
         - [x] Buy milk
         - [x] Make laundry
         - [ ] Take over the world
+
+#### Note about mixed lists
+You can mix the different list types, but keep in mind that you will need to use 3 or 4 spaces to indent a List of a different type.
 
 ----
 ## Links

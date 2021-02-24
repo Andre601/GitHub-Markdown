@@ -238,7 +238,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
 
 ### Tasks
 This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
-The "check" an entry, will you only need to replace the space in between the brackets with an x.
+To "check" an entry, will you only need to replace the space in between the brackets with an x.
 
 Note that MkDocs doesn't provide such a system by default, so we use PyMdown's Tasklist extension to simulate a similar behaviour.
 

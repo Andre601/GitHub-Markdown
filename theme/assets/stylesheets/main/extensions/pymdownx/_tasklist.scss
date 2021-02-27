@@ -85,7 +85,7 @@
 
   // Tasklist indicator in checked state
   [type="checkbox"]:checked + .task-list-indicator::before {
-    background-color: $clr-green-a400;
+    background-color: #ffffff;
     mask-image: var(--md-tasklist-icon--checked);
   }
 }

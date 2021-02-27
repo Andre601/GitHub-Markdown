@@ -108,6 +108,6 @@ markdown_extensions:
   - pymdownx.superfences:
   - pymdownx.tabbed: # This extension requires the 'tabbed.css' to be used.
   - pymdownx.tasklist:
-      custom_checkbox: true
+      custom_checkbox: false
       clickable_checkbox: false
   - pymdownx.tilde:

@@ -31,7 +31,7 @@ theme:
   # Uncomment the below option to use the "theme extension" option
   # to customize certain aspects of the Material Theme.
   #
-  #custom_dir: 'theme'
+  custom_dir: 'theme'
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#favicon
   favicon: 'assets/img/logo.png'

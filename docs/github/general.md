@@ -7,6 +7,8 @@
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
 
+[toc]
+
 - [Headers](#headers)
 - [Text formatting](#text-formatting)
     - [Italic](#italic)
@@ -242,7 +244,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
 This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
 To "check" an entry, will you only need to replace the space in between the brackets with an x.
 
-Note that MkDocs doesn't provide such a system by default, so we use PyMdown's Tasklist extension to simulate a similar behaviour.
+We use pymdownx's "checklist" extension and some custom CSS to emulate the natural feel
 
 !!! info
     === "Markdown"

@@ -106,5 +106,5 @@ When using [inline code](../general#inline-code) can you use a hashtag, followed
         I like green: `#16c60c`
         ```
     === "Result"
-        `#16c60c🟩`
+        I like green: `#16c60c🟩`
 

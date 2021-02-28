@@ -100,13 +100,11 @@ Note, that we use an image here to display the result.
 ## Color preview
 When using [inline code](../general#inline-code) can you use a hashtag, followed by a hexadecimal color value (i.e. `#ffffff`) and GitHub will automatically add a small square in the provided color to it.
 
-Note, that we use an image here to display the result.
-
 !!! info
     === "Markdown"
         ```
         I like green: `#16c60c`
         ```
     === "Result"
-        `#16c60c🟩`
+        I like green: `#16c60c🟩`
 

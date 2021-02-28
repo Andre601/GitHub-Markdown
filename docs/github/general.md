@@ -7,8 +7,6 @@
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
 
-[toc]
-
 - [Headers](#headers)
 - [Text formatting](#text-formatting)
     - [Italic](#italic)

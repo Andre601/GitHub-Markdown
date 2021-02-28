@@ -105,8 +105,8 @@ Note, that we use an image here to display the result.
 !!! info
     === "Markdown"
         ```
-        I like green: `#00ff00`
+        I like green: `#16c60c`
         ```
     === "Result"
-        ![image][color]
+        `#16c60c🟩`
 

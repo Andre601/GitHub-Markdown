@@ -1,5 +1,4 @@
 @import "extensions/tabbed.css";
-@import "extensions/tasklist.css";
 
 @import "styling/style.css";
-@import "styling/checkbox.css";
+@import "styling/checklist.css";

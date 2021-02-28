@@ -5,9 +5,9 @@ site_author: 'Andre_601'
 #
 # This section uses normal HTML, so normal HTML tags and specific text like &copy; are supported
 copyright: |
-  &copy; Andre_601
-  <br>The GitHub icon is a copyrighted product and used on this page for demonstration purposes.
-  <br>The copyright belongs to the original copyright-owner.
+  Author: Andre_601 | Shared under the <a href="https://github.com/Andre601/GitHub-Markdown/blob/master/LICENSE" target="_blank">MIT License</a>
+  <br>The GitHub icon is a registered Icon owned by GitHub Inc.
+  <br>The copyright belongs to the original copyright-owners and no attempt at claiming the icon's copyright is made.
 
 docs_dir: docs/
 

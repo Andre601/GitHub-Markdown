@@ -1,9 +1,10 @@
 # GitHub Markdown
-> Website: https://github.andre601.com/GitHub-Markdown
+> Website: https://andre601.ch/GitHub-Markdown
 
-GitHub has a lot of formatting options with Markdown. This can be your basic formatting like **bold**, *italic* or similar.  
-But there are also some formatting options that aren't documented but still available.
+GitHub offers Markdown formatting on various places. From your default **bold** and *italic* to some "GitHub Flavourited Markdown" can you find a lot of options.  
+But since the official Markdown Guide is fairly limited and doesn't even list all features usable on GitHub, did I create this repository.
 
-This website (and repository) tries to list all available options available in GitHub, so that you won't miss out on them.
+This Repository, which you can find a live-version of on the above shown URL, tries to showcase all available formatting options used in Markdown (Excluding HTML styling of course).
 
-If you do find a feature that isn't documented here, do not hesitate to make a Pull request for it!
+Found a feature not listed here? Tell me and I'll try to implement it.  
+But keep in mind that it may either come with limitations, or won't be displayed add all due to certain restrictions.

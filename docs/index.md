@@ -1,3 +1,10 @@
+---
+title: GitHub Markdown
+description: This page tries to list everything about basic markdown and GitHub flavourited Markdown (GFM)
+hide:
+- toc
+---
+
 [MkDocs]: https://www.mkdocs.org
 [PyMdown extensions]: https://facelessuser.github.io/pymdown-extensions/
 

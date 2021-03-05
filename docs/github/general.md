@@ -1,4 +1,6 @@
 ---
+title: Markdown for GitHub
+description: All the Markdown features available on GitHub.
 hide:
 - toc
 ---

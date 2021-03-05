@@ -1,3 +1,10 @@
+---
+title: Markdown for Wikis
+description: All the unique features for Wiki Pages.
+hide:
+- toc
+---
+
 [home]: https://github.com/Andre601/GitHub-Markdown/wiki
 
 # Wiki

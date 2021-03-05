@@ -1,3 +1,10 @@
+---
+title: Markdown for Issues/Pull requests
+description: All the unique features for issues and Pull requests.
+hide:
+- toc
+---
+
 [file]: https://Andre601.github.io/GitHub-Markdown/assets/img/file-preview.png
 [color]: https://Andre601.github.io/GitHub-Markdown/assets/img/color.png
 

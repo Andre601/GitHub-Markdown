@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 <!-- We have the links here because MkDocs doesn't like indended reference links -->
 [Link]: https://google.com
 [GitHub]: https://github.com

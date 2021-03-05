@@ -68,6 +68,7 @@ extra:
   #manifest: manifest.webmanifest
 
 markdown_extensions:
+  - meta:
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
       guess_lang: false

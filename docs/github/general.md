@@ -429,7 +429,7 @@ Making tables in Markdown is fairly simple.
 GitHub allows to render emojis.  
 A emoji is defined using a starting colon (`:`) followed by any alphanummerical text, hyphens (`-`) and underscores (`_`) amd ends with anothor colon.
 
-All available Emojis can be found on http://Emoji-cheat-sheet.com.
+All available Emojis can be found on @ikatyang/emoji-cheat-sheet
 
 !!! info
     === "Markdown"

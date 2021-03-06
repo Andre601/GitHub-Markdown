@@ -6,24 +6,20 @@ hide:
 - toc
 ---
 
-[file]: https://Andre601.github.io/GitHub-Markdown/assets/img/file-preview.png
-[color]: https://Andre601.github.io/GitHub-Markdown/assets/img/color.png
-
 [MagicLink]: https://facelessuser.github.io/pymdown-extensions/extensions/magiclink
 
-!!! pages "Pages"
-    [:brands-github: General](../general){: .md-button } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](#){: .md-button .md-button--primary } [:octicons-book-24: Wiki](../wiki){: .md-button }
-    
+--8<-- "nav_issues.txt"
+
 # Issues/Pull Requests
 This page lists all features that can be used across all issues and Pull requests on GitHub.
 
 !!! info "Note"
-    Issues and Pull requests support all [general features](../general).
+    Issues and Pull requests support all [general features](general.md).
 
 - [Link shortening](#link-shortening)
     - [Commits](#commits)
     - [Issues and Pull requests](#issues-and-pull-requests)
-- [File preview](#file-preview)
+- [File previews](#file-previews)
 - [Color preview](#color-preview)
 
 ----
@@ -105,7 +101,7 @@ Note, that we use an image here to display the result.
         https://github.com/Andre601/GitHub-Markdown/blob/97c92e943f888101026473b2168c90398d92655c/requirements.txt#L1
         ```
     === "Result"
-        ![image][file]
+        ![image](file-preview.png)
 
 ----
 ## Color preview

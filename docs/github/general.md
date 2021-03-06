@@ -12,8 +12,7 @@ hide:
 
 [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
 
-!!! pages "Pages"
-    [:brands-github: General](#){: .md-button .md-button--primary } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](../issues-pull-requests){: .md-button } [:octicons-book-24: Wiki](../wiki){: .md-button }
+--8<-- "nav_general.txt"
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.

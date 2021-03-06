@@ -2,6 +2,7 @@
 title: Markdown for GitHub
 description: All the Markdown features available on GitHub.
 hide:
+- navigation
 - toc
 ---
 
@@ -10,6 +11,9 @@ hide:
 [GitHub]: https://github.com
 
 [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
+
+!!! pages "Pages"
+    [:brands-github: General](#){: .md-button .md-button--primary } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](../issues-pull-requests){: .md-button } [:octicons-book-24: Wiki](../wiki){: .md-button }
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.

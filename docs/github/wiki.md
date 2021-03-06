@@ -2,11 +2,15 @@
 title: Markdown for Wikis
 description: All the unique features for Wiki Pages.
 hide:
+- navigation
 - toc
 ---
 
 [home]: https://github.com/Andre601/GitHub-Markdown/wiki
 
+!!! pages "Pages"
+    [:brands-github: General](../general){: .md-button } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](../issues-pull-requests){: .md-button } [:octicons-book-24: Wiki](#){: .md-button .md-button--primary }
+    
 # Wiki
 This page lists all features that can be used inside Wikis on GitHub repositories.
 

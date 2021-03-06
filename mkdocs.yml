@@ -20,7 +20,6 @@ repo_url: https://github.com/Andre601/GitHub-Markdown
 nav:
   - Welcome: index.md
   - GitHub:
-    - Index: github/index.md
     - General: github/general.md
     - Issues/Pull requests: github/issues-pull-requests.md
     - Wiki: github/wiki.md
@@ -68,6 +67,7 @@ extra:
   #manifest: manifest.webmanifest
 
 markdown_extensions:
+  - attr_list:
   - meta:
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
@@ -88,6 +88,11 @@ markdown_extensions:
   #- pymdownx.critic:
   #- pymdownx.details:
   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/assets/icons
   #- pymdownx.escapeall:
   #- pymdownx.extra:
   #- pymdownx.extrarawhtml:

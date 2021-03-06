@@ -2,6 +2,7 @@
 title: GitHub Markdown
 description: This page tries to list everything about basic markdown and GitHub flavourited Markdown (GFM)
 hide:
+- navigation
 - toc
 ---
 
@@ -11,25 +12,33 @@ hide:
 # GitHub Markdown
 Welcome to the GitHub Markdown site!
 
-This site aims to list all available options of formatting, that can be used in GitHub.  
-GitHub offers multiple places, where you can use the normal markdown formatting, but also their GitHub flavourited Markdown.
+The purpose of this page is to list all features regarding the usage of Markdown in GitHub.  
+From basic formatting such as **bold** and *italic* to special ones that are part of GitHub Flavourited Markdown (GFM) does this page cover pretty much everything.
 
-Known places for using Markdown are:
+## Usage of Markdown
+Markdown can be used on various pages of GitHub.
 
-- Any Markdown (`.md`) file on a GitHub repository.
-- Wiki pages of a GitHub repository.
-- Issues or Pull requests in a GitHub repository.
-
-To simplify the search for specific features or to more easly answer the question "What can I use in x?" is this site split up into several categories to show you more easy what can and can't be used on specific parts of GitHub.
+- From your normal Markdown files (`.md`) in a GitHub Repository
+- ...to Pages on a Repository's Wiki
+- ...to even Issues and Pull requests can you use it on various places.
 
 ## Pages
+Since not all features are used everywhere is the site split up into different categories to cover them as good as possible.
 
-- [General](github/general)  
-These formatting options can be used across all places where GitHub supports markdown.
-- [Issues/Pull requests](github/issues-pull-requests)  
-All supported options for Issues and Pull requests.
-- [Wiki](github/wiki)  
-All supported options for the wiki.
+### General
+Main Markdown formatting that can be used across GitHub.
+
+[:brands-github: General](github/general){: .md-button }
+
+### Issues / Pull requests
+Unique formatting options that can only be used in Issue and Pull request comments.
+
+[:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](github/issues-pull-requests){: .md-button }
+
+### Wiki
+Unique formatting options that can only be used in Wikis.
+
+[:octicons-book-24: Wiki](github/wiki){: .md-button }
 
 ## Note about this site and styling
 This page uses [MkDocs] together with the [PyMdown extensions].  

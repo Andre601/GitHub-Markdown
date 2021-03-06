@@ -2,6 +2,12 @@
   color: #3498db;
 }
 
-.md-sidebar--secondary {
-  display: none;
+.md-typeset .md-button {
+    color: #3498db;
+}
+
+.md-typeset .md-button--primary {
+    color: var(--md-primary-bg-color);
+    background-color: #3498db;
+    border-color: #3498db;
 }

@@ -2,6 +2,7 @@
 title: Markdown for Issues/Pull requests
 description: All the unique features for issues and Pull requests.
 hide:
+- navigation
 - toc
 ---
 
@@ -10,6 +11,9 @@ hide:
 
 [MagicLink]: https://facelessuser.github.io/pymdown-extensions/extensions/magiclink
 
+!!! pages "Pages"
+    [:brands-github: General](../general){: .md-button } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](#){: .md-button .md-button--primary } [:octicons-book-24: Wiki](../wiki){: .md-button }
+    
 # Issues/Pull Requests
 This page lists all features that can be used across all issues and Pull requests on GitHub.
 

@@ -1,5 +1,15 @@
-[home]: https://github.com/Andre601/GitHub-Markdown/wiki
+---
+title: Markdown for Wikis
+description: All the unique features for Wiki Pages.
+hide:
+- navigation
+- toc
+---
 
+[general]: https://andre601.ch
+
+--8<-- "nav_wiki.txt"
+    
 # Wiki
 This page lists all features that can be used inside Wikis on GitHub repositories.
 
@@ -18,14 +28,18 @@ You can easly link to other pages by starting a link with two opening square bra
 !!! info
     === "Markdown"
         ```
-        [[Home]]
+        [[General]]  
+        [[Issues Pull requests]]
         
         Displaying an alternative text:  
-        [[Main page|Home]]
+        [[Main Formatting|General]]  
+        [[Issues and Pull request formatting|Issues Pull requests]]
         ```
     === "Result"
-        <!-- We have to cheat here a bit because there's no other way to link a wiki in MkDocs -->
-        [Home]
+        [[General]]  
+        [[Issues Pull requests]]
         
+        <!-- The EzLinks plugin we use sadly uses a different order -->
         Displaying an alternative text:  
-        [Main page][home]
+        [[General|Main Formatting]]  
+        [[Issues Pull requests|Issues and Pull request formatting]]

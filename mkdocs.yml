@@ -20,7 +20,6 @@ repo_url: https://github.com/Andre601/GitHub-Markdown
 nav:
   - Welcome: index.md
   - GitHub:
-    - Index: github/index.md
     - General: github/general.md
     - Issues/Pull requests: github/issues-pull-requests.md
     - Wiki: github/wiki.md
@@ -31,7 +30,7 @@ theme:
   # Uncomment the below option to use the "theme extension" option
   # to customize certain aspects of the Material Theme.
   #
-  #custom_dir: 'theme'
+  custom_dir: 'theme'
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#favicon
   favicon: 'assets/img/logo.png'
@@ -67,7 +66,13 @@ extra:
   # https://squidfunk.github.io/mkdocs-material/getting-started/#adding-a-web-app-manifest
   #manifest: manifest.webmanifest
 
+plugins:
+  - search
+  - ezlinks
+
 markdown_extensions:
+  - attr_list:
+  - meta:
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
       guess_lang: false
@@ -87,6 +92,11 @@ markdown_extensions:
   #- pymdownx.critic:
   #- pymdownx.details:
   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/assets/icons
   #- pymdownx.escapeall:
   #- pymdownx.extra:
   #- pymdownx.extrarawhtml:
@@ -103,7 +113,8 @@ markdown_extensions:
   #- pymdownx.pathconverter:
   #- pymdownx.progressbar:
   #- pymdownx.smartsymbols:
-  #- pymdownx.snippets:
+  - pymdownx.snippets:
+      base_path: _snippets
   #- pymdownx.striphtml:
   - pymdownx.superfences:
   - pymdownx.tabbed: # This extension requires the 'tabbed.css' to be used.

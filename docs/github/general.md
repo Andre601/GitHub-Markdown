@@ -1,8 +1,18 @@
+---
+title: Markdown for GitHub
+description: All the Markdown features available on GitHub.
+hide:
+- navigation
+- toc
+---
+
 <!-- We have the links here because MkDocs doesn't like indended reference links -->
 [Link]: https://google.com
 [GitHub]: https://github.com
 
 [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
+
+--8<-- "nav_general.txt"
 
 # General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.

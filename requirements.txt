@@ -1,1 +1,2 @@
-mkdocs-material>=5.2.0
+mkdocs-material>=7.0.3
+mkdocs-ezlinks-plugin>=0.1.7

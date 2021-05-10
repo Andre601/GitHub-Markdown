@@ -13,6 +13,8 @@ hide:
 # Issues/Pull Requests
 This page lists all features that can be used across all issues and Pull requests on GitHub.
 
+--8<-- "general_features.txt"
+
 - [Link shortening](#link-shortening)
     - [Commits](#commits)
     - [Issues and Pull requests](#issues-and-pull-requests)

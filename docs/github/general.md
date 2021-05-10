@@ -14,7 +14,7 @@ hide:
 
 --8<-- "nav_general.txt"
 
-# General
+# :octicons-markdown-16: General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
 
 - [Headers](#headers)

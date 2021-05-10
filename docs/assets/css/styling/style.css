@@ -11,3 +11,8 @@
     background-color: #3498db;
     border-color: #3498db;
 }
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}

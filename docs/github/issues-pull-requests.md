@@ -10,7 +10,7 @@ hide:
 
 --8<-- "nav_issues.txt"
 
-# Issues/Pull Requests
+# :octicons-issue-opened-16: Issues / :octicons-git-pull-request-16: Pull Requests
 This page lists all features that can be used across all issues and Pull requests on GitHub.
 
 --8<-- "general_features.txt"

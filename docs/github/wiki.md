@@ -10,7 +10,7 @@ hide:
 
 --8<-- "nav_wiki.txt"
     
-# Wiki
+# :octicons-book-16: Wiki
 This page lists all features that can be used inside Wikis on GitHub repositories.
 
 --8<-- "general_features.txt"

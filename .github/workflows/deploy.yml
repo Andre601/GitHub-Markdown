@@ -12,6 +12,7 @@ on:
     - 'docs/**'
     - 'mkdocs.yml'
     - 'theme/**'
+    - '_snippets/**'
     branches:
     - master
 

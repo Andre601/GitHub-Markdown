@@ -13,8 +13,7 @@ hide:
 # Issues/Pull Requests
 This page lists all features that can be used across all issues and Pull requests on GitHub.
 
-!!! info "Note"
-    Issues and Pull requests support all [general features](general.md).
+--8<-- "general_features.txt"
 
 - [Link shortening](#link-shortening)
     - [Commits](#commits)

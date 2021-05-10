@@ -1,2 +1,2 @@
 !!! pages "Pages"
-    [:brands-github: General](general.md){: .md-button } [:octicons-issue-opened-24: Issues / :octicons-git-pull-request-24: Pull requests](){: .md-button .md-button--primary } [:octicons-book-24: Wiki](wiki.md){: .md-button }
+    [:octicons-markdown-16: General](general.md){: .md-button } [:octicons-issue-opened-16: Issues / :octicons-git-pull-request-16: Pull requests](){: .md-button .md-button--primary } [:octicons-book-16: Wiki](wiki.md){: .md-button }

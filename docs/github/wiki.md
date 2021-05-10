@@ -13,8 +13,7 @@ hide:
 # Wiki
 This page lists all features that can be used inside Wikis on GitHub repositories.
 
-!!! info "Note"
-    Wikis support all [general features](../general).
+--8<-- "general_features.txt"
 
 - [Reference links](#reference-links)
 

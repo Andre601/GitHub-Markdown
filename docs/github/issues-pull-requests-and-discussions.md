@@ -86,8 +86,8 @@ You can link to issues and Pull requests in various ways.
     === "Result"
         Full URL:
         
-        - https://github.com/Andre601/GitHub-Markdown/pull/2
-        - https://github.com/jlord/sheetsee.js/issues/26
+        - [#2](https://github.com/Andre601/GitHub-Markdown/pull/2)
+        - [jlord/sheetsee.js#26](https://github.com/jlord/sheetsee.js/issues/26)
         
         Issue/Pull request number (Own repository):
         

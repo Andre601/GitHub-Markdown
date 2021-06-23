@@ -7,4 +7,4 @@ But since the official Markdown Guide is fairly limited and doesn't even list al
 This Repository, which you can find a live-version of on the above shown URL, tries to showcase all available formatting options used in Markdown (Excluding HTML styling of course).
 
 Found a feature not listed here? Tell me and I'll try to implement it.  
-But keep in mind that it may either come with limitations, or won't be displayed add all due to certain restrictions.
+But keep in mind that it may either come with limitations, or won't be displayed at all due to certain restrictions.

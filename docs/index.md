@@ -16,11 +16,11 @@ The purpose of this page is to list all features regarding the usage of Markdown
 From basic formatting such as **bold** and *italic* to special ones that are part of GitHub Flavourited Markdown (GFM) does this page cover pretty much everything.
 
 ## Usage of Markdown
-Markdown can be used on various pages of GitHub.
+Markdown can be used on multiple places, including but not limited to:
 
-- From your normal Markdown files (`.md`) in a GitHub Repository
-- ...to Pages on a Repository's Wiki
-- ...to even Issues and Pull requests can you use it on various places.
+- Markdown files (i.e. `README.md`)
+- Issues, Pull requests, Discussions, Commit Comments and Releases
+- Wiki Pages
 
 ## Pages
 Since not all features are used everywhere is the site split up into different categories to cover them as good as possible.
@@ -30,10 +30,11 @@ Main Markdown formatting that can be used across GitHub.
 
 [:octicons-markdown-16: General](general){: .md-button }
 
-### Issues / Pull requests
-Unique formatting options that can only be used in Issue and Pull request comments.
+### Issues, Pull requests and Discussions
+Unique formatting options that can only be used in Issues, Pull requests and Discussions.  
+This may also include Comments on Commits and Releases but was not tested.
 
-[:octicons-issue-opened-16: Issues / :octicons-git-pull-request-16: Pull requests](issues-pull-requests){: .md-button }
+[:octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions](issues-pull-requests){: .md-button }
 
 ### Wiki
 Unique formatting options that can only be used in Wikis.

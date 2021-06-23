@@ -21,7 +21,7 @@ nav:
   - Welcome: index.md
   - GitHub:
     - General: github/general.md
-    - Issues/Pull requests: github/issues-pull-requests.md
+    - "Issues, Pull requests and Discussions": github/issues-pull-requests-and-discussions.md
     - Wiki: github/wiki.md
 
 theme:

@@ -72,7 +72,7 @@ plugins:
   - ezlinks
   - redirects:
       redirect_maps:
-        'github/issues-pull-requests.md': 'github/issues-pull-requests-and-discusssions.md'
+        'github/issues-pull-requests.md': 'github/issues-pull-requests-and-discussions.md'
 
 markdown_extensions:
   - attr_list:

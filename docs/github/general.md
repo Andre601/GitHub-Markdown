@@ -96,6 +96,7 @@ You can display a text in italic by surrounding it either with a single asterisk
         
         Alternatively can you also use _underscores_.
         ```
+        
     === "Result"
         You can use *asterisks* to make text *italic*.
         
@@ -111,6 +112,7 @@ Using two Asterisks (`*`) or two underscores (`_`) before and after the text mak
         
         Alternatively can you also use __two underscores__.
         ```
+        
     === "Result"
         You can use **two asterisks** to make text **bold**.
         
@@ -124,6 +126,7 @@ This is a GitHub exclusive formatting code, where you use two tilde (`~`) before
         ```
         Don't like this text? Just ~~cross it out!~~
         ```
+        
     === "Result"
         Don't like this text? Just ~~cross it out!~~
 
@@ -138,6 +141,7 @@ You can combine the above [formatting options](#text-formatting) to have more sp
         
         Or how about ~~strikethrough with *italic*?~~
         ```
+        
     === "Result"
         Here is some *italic text with __additional bold__*
         
@@ -155,6 +159,7 @@ Note that you need an empty line between a quote and any normal text below it to
         Albert Einstein once said:  
         > Once you stop learning you start dying.
         ```
+        
     === "Result"
         Albert Einstein once said:  
         > Once you stop learning you start dying.
@@ -170,6 +175,7 @@ Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will cr
         ---
         But keep an empty line between text and the hyphens below it or it becomes a h2 header!
         ```
+        
     === "Result"
         Use three or more hyphens, asterisks or underscores to make a line
         
@@ -190,6 +196,7 @@ To indicate a line break end a line with two spaces (in our example indicated us
         
         For a new paragraph, leave an empty line in between.
         ```
+        
     === "Result"
         We make line breaks, by ending a line with two spaces.  
         This line will show below the other.
@@ -212,9 +219,10 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         
         ----
         
-        1. To indend an entry...
-            1. ...add 2 spaces before it.
+        1. To indent an entry...
+           1. ...add 3 spaces before it.
         ```
+        
     === "Result"
         1. This is the first entry.
         2. This is the second one.
@@ -222,8 +230,8 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         
         ----
         
-        1. To indend an entry...
-            1. ...add 2 spaces before it.
+        1. To indent an entry...
+           1. ...add 3 spaces before it.
 
 ### Unordered
 The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (`*`) or a hyphen/dash (`-`)
@@ -238,7 +246,13 @@ The unordered list has the same behaviour as the ordered list, with the differen
         
         * Because it is
         * unordered.
+        
+        ----
+        
+        - Unordered Lists...
+           - ...only require 2 spaces for an indent.
         ```
+        
     === "Result"
         - This list
         - doesn't use numbers.
@@ -247,8 +261,13 @@ The unordered list has the same behaviour as the ordered list, with the differen
         
         * Because it is
         * unordered.
+        
+        ----
+        
+        - Unordered Lists...
+           - ...only require 2 spaces for an indent.
 
-### Tasks
+### Task Lists
 This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
 To "check" an entry, will you only need to replace the space in between the brackets with an x.
 
@@ -263,6 +282,7 @@ We use pymdownx's "checklist" extension and some custom CSS to emulate the natur
         - [x] Make laundry
         - [ ] Take over the world
         ```
+        
     === "Result"
         Things to do:
         
@@ -288,6 +308,7 @@ Linking to a page normally is simple. Either post the link directly, or use `[te
         Or you link to it as an [embedded link](https://github.com).  
         You can even give it [a title](https://github.com 'Go to GitHub!') to show on Hover!
         ```
+        
     === "Result"
         You can link to sites by posting the URL: https://github.com
         
@@ -306,6 +327,7 @@ You can use the same reference link at multiple places and use `[text][reference
         
         [Reference links][Link] can be used like that to link to sites like [GitHub]!
         ```
+        
     === "Result"
         [Reference links][Link] can be used like that to link to sites like [GitHub]!
 
@@ -320,6 +342,7 @@ Images can be added the same way as links (including reference link-style), but 
         ![name][github_logo]  
         ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
         ```
+        
     === "Result"
         ![name][github_logo]
         
@@ -340,6 +363,7 @@ To make inline code, surround the the text with a single backtick (`` ` ``).
         ```
         This is text with some `inline code`.
         ```
+        
     === "Result"
         This is text with some `inline code`.
 
@@ -358,6 +382,7 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
         hello world
         ```
         ````
+        
     === "Result"
         This is some code block stuff  
         ```
@@ -383,6 +408,7 @@ GitHub provides `syntax highlighting` support which means that the content withi
         }
         ```
         ````
+        
     === "Result"
         This here is some JSON with syntax highlighting:  
         ```json
@@ -418,6 +444,7 @@ Making tables in Markdown is fairly simple.
         | ------- |:---------------------- |:---------:| -------------:|
         | default | Left (Same as default) | Centered  | Right         |
         ```
+        
     === "Result"
         | Example      | One             |
         | ------------ | --------------- |
@@ -450,6 +477,7 @@ All available Emojis can be found on @ikatyang/emoji-cheat-sheet
         Invalid emoji:
         :some emoji:
         ```
+        
     === "Result"
         Valid emoji:  
         :smile:

@@ -70,6 +70,9 @@ extra:
 plugins:
   - search
   - ezlinks
+  - redirects:
+      redirect_maps:
+        'github/issues-pull-requests.md': 'github/issues-pull-requests-and-discusssions.md'
 
 markdown_extensions:
   - attr_list:
@@ -123,3 +126,4 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: false
   - pymdownx.tilde:
+  - pymdownx.saneheaders:

@@ -34,6 +34,7 @@ You can easly link to other pages by starting a link with two opening square bra
         [[Main Formatting|General]]  
         [[Issues and Pull request formatting|Issues Pull requests]]
         ```
+        
     === "Result"
         [[General]]  
         [[Issues Pull requests]]

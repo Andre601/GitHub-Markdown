@@ -24,7 +24,7 @@ That said, are [all other link types](../general#links) still usable.
 
 You can easly link to other pages by starting a link with two opening square brackets (`[`) followed by the page name and closing it with two closing square brackets (`]`).
 
-!!! info
+!!! example
     === "Markdown"
         ```
         [[General]]  

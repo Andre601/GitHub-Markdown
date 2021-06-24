@@ -37,7 +37,7 @@ However, when the URL points to a commit of a separate repository, will the resu
     - `:user@:commit` For commits of User `:user`
     - `:user/:reopo@:commit` For commits of User `:user` in repo `:repo`
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Same repository:
@@ -65,7 +65,7 @@ However, when the URL points to a commit of a separate repository, will the resu
 ### Issues and Pull requests
 You can link to issues and Pull requests in various ways.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Full URL:
@@ -104,7 +104,7 @@ When you link to a section of a file in a specific commit will GitHub show the t
 
 Note, that we use an image here to display the result.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         https://github.com/Andre601/GitHub-Markdown/blob/97c92e943f888101026473b2168c90398d92655c/requirements.txt#L1
@@ -117,7 +117,7 @@ Note, that we use an image here to display the result.
 ## Color preview
 When using [inline code](../general#inline-code) can you use a hashtag, followed by a hexadecimal color value (i.e. `#ffffff`) and GitHub will automatically add a small square in the provided color to it.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         I like green: `#16c60c`

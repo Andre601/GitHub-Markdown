@@ -45,7 +45,7 @@ This page lists all features that can be used across all places on GitHub, which
 ## Headers
 Headers are larger text like shown above and also allow you to link to it, when used in Markdown files or the Wiki.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         # H1 Header
@@ -89,7 +89,7 @@ GitHub offers normal Markdown formatting but also adds some own styling.
 ### Italic
 You can display a text in italic by surrounding it either with a single asterisks (`*`) or underscore (`_`).
 
-!!! info
+!!! example
     === "Markdown"
         ```
         You can use *asterisks* to make text *italic*.
@@ -105,7 +105,7 @@ You can display a text in italic by surrounding it either with a single asterisk
 ### Bold
 Using two Asterisks (`*`) or two underscores (`_`) before and after the text makes it bold.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         You can use **two asterisks** to make text **bold**.
@@ -121,7 +121,7 @@ Using two Asterisks (`*`) or two underscores (`_`) before and after the text mak
 ### Strikethrough
 This is a GitHub exclusive formatting code, where you use two tilde (`~`) before and after text to make it strikethrough.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Don't like this text? Just ~~cross it out!~~
@@ -133,7 +133,7 @@ This is a GitHub exclusive formatting code, where you use two tilde (`~`) before
 ### Combinations
 You can combine the above [formatting options](#text-formatting) to have more special text.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         <!-- Note that you have to use underscores when already using asterisks -->
@@ -153,7 +153,7 @@ The message will have a little bar on the left side and slightly different styli
 
 Note that you need an empty line between a quote and any normal text below it to not include it in the quote.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Albert Einstein once said:  
@@ -167,7 +167,7 @@ Note that you need an empty line between a quote and any normal text below it to
 ### Horizontal rule
 Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will create a horizontal rule (line) which goes accross the entire text area.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Use three or more hyphens, asterisks or underscores to make a line
@@ -188,7 +188,7 @@ To indicate a line break end a line with two spaces (in our example indicated us
 !!! note
     Issues and Pull requests don't require two spaces at the end for line breaks.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         We make line breaks, by ending a line with two spaces.++ <!-- + means a space -->
@@ -210,7 +210,7 @@ You can have various types of lists to order things.
 ### Ordered
 Starting a line with any number followed by a dot, space and text makes a new Ordered list.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         1. This is the first entry.
@@ -236,7 +236,7 @@ Starting a line with any number followed by a dot, space and text makes a new Or
 ### Unordered
 The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (`*`) or a hyphen/dash (`-`)
 
-!!! info
+!!! example
     === "Markdown"
         ```
         - This list
@@ -273,7 +273,7 @@ To "check" an entry, will you only need to replace the space in between the brac
 
 We use pymdownx's "checklist" extension and some custom CSS to emulate the natural feel
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Things to do:
@@ -300,7 +300,7 @@ You can link to stuff in various ways
 ### Normal
 Linking to a page normally is simple. Either post the link directly, or use `[text](link)`
 
-!!! info
+!!! example
     === "Markdown"
         ```
         You can link to sites by posting the URL: https://github.com
@@ -319,7 +319,7 @@ Linking to a page normally is simple. Either post the link directly, or use `[te
 Reference URLs are similar to normal ones, with the difference, that you only enclose the text in square brackets and it becomes a embedded link (when text matches).  
 You can use the same reference link at multiple places and use `[text][reference link text]` in case the text would be different than the reference link's text.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         [Link]: https://google.com
@@ -334,7 +334,7 @@ You can use the same reference link at multiple places and use `[text][reference
 ### Image
 Images can be added the same way as links (including reference link-style), but have an exclamation mark (`!`) before them.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
@@ -358,7 +358,7 @@ To make inline code, surround the the text with a single backtick (`` ` ``).
 !!! tip "Pro-tip"
     If you want to display backticks within inline code will you need to start and end the text with **2 backticks**.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         This is text with some `inline code`.
@@ -374,7 +374,7 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
 !!! tip "Pro-tip"
     If you want to display three backticks within code blocks will you need to start and end the text with **4 backticks**.
 
-!!! info
+!!! example
     === "Markdown"
         ````
         This is some code block stuff  
@@ -394,7 +394,7 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
 #### Syntax highlighting
 GitHub provides `syntax highlighting` support which means that the content within a codeblock can be colorized, depending on what coding language was selected.
 
-!!! info
+!!! example
     === "Markdown"
         ````
         This here is some JSON with syntax highlighting:  
@@ -425,7 +425,7 @@ GitHub provides `syntax highlighting` support which means that the content withi
 ## Tables
 Making tables in Markdown is fairly simple.
 
-!!! info
+!!! example
     === "Markdown"
         ```
         | Example      | One             |
@@ -468,7 +468,7 @@ A emoji is defined using a starting colon (`:`) followed by any alphanummerical 
 
 All available Emojis can be found on @ikatyang/emoji-cheat-sheet
 
-!!! info
+!!! example
     === "Markdown"
         ```
         Valid emoji:  

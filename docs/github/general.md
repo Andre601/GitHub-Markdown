@@ -29,7 +29,7 @@ This page lists all features that can be used across all places on GitHub, which
 - [Lists](#lists)
     - [Ordered](#ordered)
     - [Unordered](#unordered)
-    - [Tasks](#tasks)
+    - [Task lists](#task-lists)
 - [Links](#links)
     - [Normal](#normal)
     - [Reference](#reference)

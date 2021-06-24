@@ -137,11 +137,19 @@ Whenever a issue or Pull request is linked in a task list and said issue/Pull re
         Representation not 100% accurate
         
         - [ ] #15
-        - [ ] #16
+        - #16
+        
+        External repository:
+        
+        - https://github.com/github/feedback/discussions/4251
         ```
     === "Result"
         Representation not 100% accurate
         
         - [x] [:octicons-git-merge-16:{ .color-merged } **Replace info with example admonition** #15](https://github.com/Andre601/GitHub-Markdown/pull/15)
-        - [ ] [:octicons-issue-opened-16:{ .color-opened } **Test linked PR** #16](https://github.com/Andre601/GitHub-Markdown/pull/16)
+        - [:octicons-issue-opened-16:{ .color-opened } **Test linked PR** #16](https://github.com/Andre601/GitHub-Markdown/pull/16)
+        
+        External repository:
+        
+        - [:octicons-comment-discussion-16:{ .color-neutral } **The new Task List (Beta)** github/feedback#4251](https://github.com/github/feedback/discussions/4251)
         

@@ -20,6 +20,7 @@ This page lists all features that can be used across all issues, Pull requests a
     - [Issues and Pull requests](#issues-and-pull-requests)
 - [File previews](#file-previews)
 - [Color preview](#color-preview)
+- [Advanced (task) Lists](#advanced-task-lists)
 
 ----
 ## Link shortening

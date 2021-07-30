@@ -16,3 +16,15 @@
     width: 2.4rem;
     height: 2.4rem;
 }
+
+.color-merged {
+    color: #A371F7;
+}
+
+.color-opened {
+    color: #3FB950;
+}
+
+.color-neutral {
+    color: #8B949E;
+}

@@ -20,6 +20,7 @@ This page lists all features that can be used across all issues, Pull requests a
     - [Issues and Pull requests](#issues-and-pull-requests)
 - [File previews](#file-previews)
 - [Color preview](#color-preview)
+- [Advanced (task) Lists](#advanced-task-lists)
 
 ----
 ## Link shortening
@@ -125,4 +126,31 @@ When using [inline code](../general#inline-code) can you use a hashtag, followed
         
     === "Result"
         I like green: `#16c60c🟩`
+
+----
+## Advanced (task) lists
+Whenever you link an issue, Pull request or Discussion in a list or Task list will GitHub automatically display the title, id and the current state of the issue, Pull request or Discussion.  
+Whenever a issue or Pull request is linked in a task list and said issue/Pull request is closed or merged will the corresponding task list entry get "checked".
+
+!!! example
+    === "Markdown"
+        ```
+        Representation not 100% accurate
+        
+        - [ ] #15
+        - #16
+        
+        External repository:
+        
+        - https://github.com/github/feedback/discussions/4251
+        ```
+    === "Result"
+        Representation not 100% accurate
+        
+        - [x] [:octicons-git-merge-16:{ .color-merged } **Replace info with example admonition** #15](https://github.com/Andre601/GitHub-Markdown/pull/15)
+        - [:octicons-issue-opened-16:{ .color-opened } **Test linked PR** #16](https://github.com/Andre601/GitHub-Markdown/pull/16)
+        
+        External repository:
+        
+        - [:octicons-comment-discussion-16:{ .color-neutral } **The new Task List (Beta)** github/feedback#4251](https://github.com/github/feedback/discussions/4251)
         

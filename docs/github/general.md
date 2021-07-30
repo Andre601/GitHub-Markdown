@@ -29,7 +29,7 @@ This page lists all features that can be used across all places on GitHub, which
 - [Lists](#lists)
     - [Ordered](#ordered)
     - [Unordered](#unordered)
-    - [Tasks](#tasks)
+    - [Task lists](#task-lists)
 - [Links](#links)
     - [Normal](#normal)
     - [Reference](#reference)
@@ -289,6 +289,10 @@ We use pymdownx's "checklist" extension and some custom CSS to emulate the natur
         - [x] Buy milk
         - [x] Make laundry
         - [ ] Take over the world
+
+#### Unique behaviour of Task Lists
+Task lists may show the issues icon (:octicons-issue-opened-16:) on the right-hand side if hovered over and when used in an issue or Pull request.  
+Clicking this icon will allow to open a new issue that links to this entry.
 
 #### Note about mixed lists
 You can mix the different list types, but keep in mind that you will need to use 3 or 4 spaces to indent a List of a different type.

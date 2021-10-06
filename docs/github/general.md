@@ -213,18 +213,29 @@ The generated footnotes will link to each other.
 !!! example
     === "Markdown"
         ```
-        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
+        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.  
+        It also allows usage of HTML[^html] in it.
         
         [^1]: https://daringfireball.net/projects/markdown/syntax
         [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
           Source: https://en.wikipedia.org/wiki/Markup_language
-        ```
-    === "Result"
-        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
         
-[^1]: https://daringfireball.net/projects/markdown/syntax
-[^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.  
-  Source: https://en.wikipedia.org/wiki/Markup_language
+        <!-- This is a different syntax you can use for multi-line text -->
+        [^html]:
+            Hypertext Markup Language.  
+            Made by the World Wide Web Consortium (W3C).
+        ```
+        
+    === "Result"
+        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.  
+        It also allows usage of HTML[^html] in it.
+        
+        [^1]: https://daringfireball.net/projects/markdown/syntax
+        [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
+          Source: https://en.wikipedia.org/wiki/Markup_language
+        [^html]:
+            Hypertext Markup Language.  
+            Made by the World Wide Web Consortium (W3C).
         
 ----
 ## Lists

@@ -222,9 +222,9 @@ The generated footnotes will link to each other.
     === "Result"
         Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
         
-        [^1]: https://daringfireball.net/projects/markdown/syntax
-        [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
-          Source: https://en.wikipedia.org/wiki/Markup_language
+[^1]: https://daringfireball.net/projects/markdown/syntax
+[^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.  
+  Source: https://en.wikipedia.org/wiki/Markup_language
         
 ----
 ## Lists

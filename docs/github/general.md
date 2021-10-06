@@ -26,6 +26,7 @@ This page lists all features that can be used across all places on GitHub, which
     - [Quotes](#quotes)
     - [Horizontal rule](#horizontal-rule)
     - [Line breaks](#line-breaks)
+    - [Footnotes](#footnotes)
 - [Lists](#lists)
     - [Ordered](#ordered)
     - [Unordered](#unordered)
@@ -203,6 +204,28 @@ To indicate a line break end a line with two spaces (in our example indicated us
         
         For a new paragraph, leave an empty line in between.
 
+### Footnotes
+The footnote syntax allows you to link text or URLs without destroying the text's look and formatting.  
+To use a footnote, simply use `[^n]` - where `n` is a number or text to use - in the place you want a footnote to be placed and use `[^n]: <text>` to make a link.
+
+The generated footnotes will link to each other.
+
+!!! example
+    === "Markdown"
+        ```
+        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
+        
+        [^1]: https://daringfireball.net/projects/markdown/syntax
+        [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
+          Source: https://en.wikipedia.org/wiki/Markup_language
+        ```
+    === "Result"
+        Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
+        
+        [^1]: https://daringfireball.net/projects/markdown/syntax
+        [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
+          Source: https://en.wikipedia.org/wiki/Markup_language
+        
 ----
 ## Lists
 You can have various types of lists to order things.

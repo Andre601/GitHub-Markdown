@@ -665,15 +665,22 @@ To use a footnote, simply use <code>[^n]</code> - where <code>n</code> is a numb
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Markdown</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
+<div class="highlight"><pre><span></span><code>Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.  
+It also allows usage of HTML[^html] in it.
 
 [^1]: https://daringfireball.net/projects/markdown/syntax
 [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
   Source: https://en.wikipedia.org/wiki/Markup_language
+
+&lt;!-- This is a different syntax you can use for multi-line text --&gt;
+[^html]:
+    Hypertext Markup Language.  
+    Made by the World Wide Web Consortium (W3C).
 </code></pre></div>
 </div>
 <input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Result</label><div class="tabbed-content">
-<p>Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> is a lightweight markup language<sup id="fnref:markup"><a class="footnote-ref" href="#fn:markup">2</a></sup> used for creating formatted text.</p>
+<p>Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> is a lightweight markup language<sup id="fnref:markup"><a class="footnote-ref" href="#fn:markup">2</a></sup> used for creating formatted text.<br />
+It also allows usage of HTML<sup id="fnref:html"><a class="footnote-ref" href="#fn:html">3</a></sup> in it.</p>
 </div>
 </div>
 </div>
@@ -1010,8 +1017,12 @@ Invalid emoji:
 <p><a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:markup">
-<p>In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.<br />
+<p>In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
   Source: <a href="https://en.wikipedia.org/wiki/Markup_language">https://en.wikipedia.org/wiki/Markup_language</a>&#160;<a class="footnote-backref" href="#fnref:markup" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:html">
+<p>Hypertext Markup Language.<br />
+Made by the World Wide Web Consortium (W3C).&#160;<a class="footnote-backref" href="#fnref:html" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

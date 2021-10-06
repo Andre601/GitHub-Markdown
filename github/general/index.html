@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="../../assets/img/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.1">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.2">
     
     
   
@@ -22,10 +22,10 @@
   
 
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1118c9be.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.24c991ad.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ba0d045b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -101,7 +101,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="GitHub Markdown" class="md-header__button md-logo" aria-label="GitHub Markdown" data-md-component="logo">
       
@@ -179,6 +181,7 @@
       </div>
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -186,6 +189,7 @@
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -223,6 +227,7 @@
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -295,10 +300,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
-      <label class="md-nav__link" for="__nav_2">
-        GitHub
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          GitHub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="GitHub" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -307,6 +316,7 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
     
@@ -357,8 +367,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -369,8 +381,10 @@
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -381,6 +395,7 @@
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -456,6 +471,7 @@
 <li><a href="./#quotes">Quotes</a></li>
 <li><a href="./#horizontal-rule">Horizontal rule</a></li>
 <li><a href="./#line-breaks">Line breaks</a></li>
+<li><a href="./#footnotes">Footnotes</a></li>
 </ul>
 </li>
 <li><a href="./#lists">Lists</a><ul>
@@ -642,6 +658,25 @@ This line will show below the other.</p>
 </div>
 </div>
 </div>
+<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h3>
+<p>The footnote syntax allows you to link text or URLs without destroying the text's look and formatting.<br />
+To use a footnote, simply use <code>[^n]</code> - where <code>n</code> is a number or text to use - in the place you want a footnote to be placed and use <code>[^n]: &lt;text&gt;</code> to make a link.</p>
+<p>The generated footnotes will link to each other.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Markdown</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.
+
+[^1]: https://daringfireball.net/projects/markdown/syntax
+[^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
+  Source: https://en.wikipedia.org/wiki/Markup_language
+</code></pre></div>
+</div>
+<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Result</label><div class="tabbed-content">
+<p>Markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> is a lightweight markup language<sup id="fnref:markup"><a class="footnote-ref" href="#fn:markup">2</a></sup> used for creating formatted text.</p>
+</div>
+</div>
+</div>
 <hr />
 <h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
 <p>You can have various types of lists to order things.</p>
@@ -649,7 +684,7 @@ This line will show below the other.</p>
 <p>Starting a line with any number followed by a dot, space and text makes a new Ordered list.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>1. This is the first entry.
 2. This is the second one.
 4. The numbers don&#39;t even have to make sense!
@@ -660,7 +695,7 @@ This line will show below the other.</p>
    1. ...add 3 spaces before it.
 </code></pre></div>
 </div>
-<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Result</label><div class="tabbed-content">
 <ol>
 <li>This is the first entry.</li>
 <li>This is the second one.</li>
@@ -678,7 +713,7 @@ This line will show below the other.</p>
 <p>The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (<code>*</code>) or a hyphen/dash (<code>-</code>)</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>- This list
 - doesn&#39;t use numbers.
 
@@ -693,7 +728,7 @@ This line will show below the other.</p>
    - ...only require 2 spaces for an indent.
 </code></pre></div>
 </div>
-<input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><label for="__tabbed_10_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Result</label><div class="tabbed-content">
 <ul>
 <li>This list</li>
 <li>doesn't use numbers.</li>
@@ -717,7 +752,7 @@ To "check" an entry, will you only need to replace the space in between the brac
 <p>We use pymdownx's "checklist" extension and some custom CSS to emulate the natural feel</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><label for="__tabbed_11_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>Things to do:
 
 - [x] Buy milk
@@ -725,7 +760,7 @@ To "check" an entry, will you only need to replace the space in between the brac
 - [ ] Take over the world
 </code></pre></div>
 </div>
-<input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><label for="__tabbed_11_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><label for="__tabbed_12_2">Result</label><div class="tabbed-content">
 <p>Things to do:</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Buy milk</li>
@@ -747,14 +782,14 @@ Clicking this icon will allow to open a new issue that links to this entry.</p>
 <p>Linking to a page normally is simple. Either post the link directly, or use <code>[text](link)</code></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>You can link to sites by posting the URL: https://github.com
 
 Or you link to it as an [embedded link](https://github.com).  
 You can even give it [a title](https://github.com &#39;Go to GitHub!&#39;) to show on Hover!
 </code></pre></div>
 </div>
-<input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><label for="__tabbed_12_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><label for="__tabbed_13_2">Result</label><div class="tabbed-content">
 <p>You can link to sites by posting the URL: <a href="https://github.com">https://github.com</a></p>
 <p>Or you link to it as an <a href="https://github.com">embedded link</a>.<br />
 You can even give it <a href="https://github.com" title="Go to GitHub!">a title</a> to show on Hover!</p>
@@ -766,14 +801,14 @@ You can even give it <a href="https://github.com" title="Go to GitHub!">a title<
 You can use the same reference link at multiple places and use <code>[text][reference link text]</code> in case the text would be different than the reference link's text.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><label for="__tabbed_14_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>[Link]: https://google.com
 [GitHub]: https://github.com
 
 [Reference links][Link] can be used like that to link to sites like [GitHub]!
 </code></pre></div>
 </div>
-<input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><label for="__tabbed_13_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><label for="__tabbed_14_2">Result</label><div class="tabbed-content">
 <p><a href="https://google.com">Reference links</a> can be used like that to link to sites like <a href="https://github.com">GitHub</a>!</p>
 </div>
 </div>
@@ -782,14 +817,14 @@ You can use the same reference link at multiple places and use <code>[text][refe
 <p>Images can be added the same way as links (including reference link-style), but have an exclamation mark (<code>!</code>) before them.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><label for="__tabbed_14_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><label for="__tabbed_15_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>[github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
 
 ![name][github_logo]  
 ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
 </code></pre></div>
 </div>
-<input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><label for="__tabbed_14_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><label for="__tabbed_15_2">Result</label><div class="tabbed-content">
 <p><img alt="name" src="https://andre601.ch/GitHub-Markdown/assets/img/github.png" /></p>
 <p><img alt="github_text" src="https://andre601.ch/GitHub-Markdown/assets/img/github-text.png" /></p>
 </div>
@@ -806,11 +841,11 @@ You can use the same reference link at multiple places and use <code>[text][refe
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><label for="__tabbed_15_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><label for="__tabbed_16_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>This is text with some `inline code`.
 </code></pre></div>
 </div>
-<input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><label for="__tabbed_15_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><label for="__tabbed_16_2">Result</label><div class="tabbed-content">
 <p>This is text with some <code>inline code</code>.</p>
 </div>
 </div>
@@ -824,14 +859,14 @@ To put text into a code block, surround it with three backticks (<code>```</code
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><label for="__tabbed_16_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><label for="__tabbed_17_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>This is some code block stuff  
 ```
 hello world
 ```
 </code></pre></div>
 </div>
-<input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><label for="__tabbed_16_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><label for="__tabbed_17_2">Result</label><div class="tabbed-content">
 <p>This is some code block stuff<br />
 <div class="highlight"><pre><span></span><code>hello world
 </code></pre></div></p>
@@ -844,7 +879,7 @@ hello world
 <p>GitHub provides <code>syntax highlighting</code> support which means that the content within a codeblock can be colorized, depending on what coding language was selected.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><label for="__tabbed_17_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><label for="__tabbed_18_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>This here is some JSON with syntax highlighting:  
 ```json
 {
@@ -857,7 +892,7 @@ hello world
 ```
 </code></pre></div>
 </div>
-<input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><label for="__tabbed_17_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><label for="__tabbed_18_2">Result</label><div class="tabbed-content">
 <p>This here is some JSON with syntax highlighting:<br />
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;hello&quot;</span><span class="p">:</span> <span class="s2">&quot;world&quot;</span><span class="p">,</span>
@@ -875,7 +910,7 @@ hello world
 <p>Making tables in Markdown is fairly simple.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><label for="__tabbed_18_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><label for="__tabbed_19_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>| Example      | One             |
 | ------------ | --------------- |
 | You can make | it look pretty! |
@@ -893,7 +928,7 @@ Text alignment.
 | default | Left (Same as default) | Centered  | Right         |
 </code></pre></div>
 </div>
-<input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><label for="__tabbed_18_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><label for="__tabbed_19_2">Result</label><div class="tabbed-content">
 <table>
 <thead>
 <tr>
@@ -952,7 +987,7 @@ A emoji is defined using a starting colon (<code>:</code>) followed by any alpha
 <p>All available Emojis can be found on <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/ikatyang/emoji-cheat-sheet" title="GitHub Repository: ikatyang/emoji-cheat-sheet">ikatyang/emoji-cheat-sheet</a></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="tabbed-set" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><label for="__tabbed_19_1">Markdown</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="20:2"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio" /><label for="__tabbed_20_1">Markdown</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>Valid emoji:  
 :smile:
 
@@ -960,13 +995,25 @@ Invalid emoji:
 :some emoji:
 </code></pre></div>
 </div>
-<input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><label for="__tabbed_19_2">Result</label><div class="tabbed-content">
+<input id="__tabbed_20_2" name="__tabbed_20" type="radio" /><label for="__tabbed_20_2">Result</label><div class="tabbed-content">
 <p>Valid emoji:<br />
 <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /></p>
 <p>Invalid emoji:<br />
 :some emoji:</p>
 </div>
 </div>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:markup">
+<p>In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.<br />
+  Source: <a href="https://en.wikipedia.org/wiki/Markup_language">https://en.wikipedia.org/wiki/Markup_language</a>&#160;<a class="footnote-backref" href="#fnref:markup" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
                 
                   
@@ -1037,10 +1084,12 @@ Invalid emoji:
 
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -1065,10 +1114,10 @@ Invalid emoji:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.53c85856.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.e99e714c.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.716f8af4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.bc35569b.min.js"></script>
       
     
   </body>

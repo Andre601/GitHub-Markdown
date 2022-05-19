@@ -24,6 +24,7 @@ This page lists all features that can be used across all places on GitHub, which
     - [Strikethrough](#strikethrough)
     - [Combinations](#combinations)
     - [Quotes](#quotes)
+        - [Special Quote blocks](#special-quote-blocks)
     - [Horizontal rule](#horizontal-rule)
     - [Line breaks](#line-breaks)
     - [Footnotes](#footnotes)
@@ -31,6 +32,7 @@ This page lists all features that can be used across all places on GitHub, which
     - [Ordered](#ordered)
     - [Unordered](#unordered)
     - [Task lists](#task-lists)
+        - [Unique behaviour of Task Lists](#unique-behaviour-of-task-lists)
 - [Links](#links)
     - [Normal](#normal)
     - [Reference](#reference)
@@ -41,6 +43,7 @@ This page lists all features that can be used across all places on GitHub, which
         - [Syntax highlighting](#syntax-highlighting)
 - [Tables](#tables)
 - [Emojis](#emojis)
+- [Math Expressions](#math-expressions)
 
 ----
 ## Headers
@@ -48,7 +51,7 @@ Headers are larger text like shown above and also allow you to link to it, when 
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         # H1 Header
         ## H2 Header
         ### H3 Header
@@ -92,7 +95,7 @@ You can display a text in italic by surrounding it either with a single asterisk
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         You can use *asterisks* to make text *italic*.
         
         Alternatively can you also use _underscores_.
@@ -108,7 +111,7 @@ Using two Asterisks (`*`) or two underscores (`_`) before and after the text mak
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         You can use **two asterisks** to make text **bold**.
         
         Alternatively can you also use __two underscores__.
@@ -124,7 +127,7 @@ This is a GitHub exclusive formatting code, where you use two tilde (`~`) before
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Don't like this text? Just ~~cross it out!~~
         ```
         
@@ -136,7 +139,7 @@ You can combine the above [formatting options](#text-formatting) to have more sp
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         <!-- Note that you have to use underscores when already using asterisks -->
         Here is some *italic text with __additional bold__*
         
@@ -156,7 +159,7 @@ Note that you need an empty line between a quote and any normal text below it to
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Albert Einstein once said:  
         > Once you stop learning you start dying.
         ```
@@ -165,12 +168,36 @@ Note that you need an empty line between a quote and any normal text below it to
         Albert Einstein once said:  
         > Once you stop learning you start dying.
 
+#### Special Quote blocks
+GitHub added a special behaviour where providing `**Note**` or `**Warning**` as the first line renders a Block quote with the first line containing an icon and text with color.
+
+!!! example
+    === "Markdown"
+        ```markdown
+        > **Note**  
+        > Drink water to stay hydrated!
+        
+        ----
+        
+        > **Warning**  
+        > Not drinking water regularely is unhealthy!
+        ```
+    
+    === "Result"
+        > <span class="color-accent-fg">:octicons-info-24: Info</span>  
+        > Drink water to stay hydrated!
+        
+        ----
+        
+        > <span class="color-attention-fg">:octicons-alert-24: Warning</span>  
+        > Not drinking water regularely is unhealthy!
+
 ### Horizontal rule
 Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will create a horizontal rule (line) which goes accross the entire text area.
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Use three or more hyphens, asterisks or underscores to make a line
         
         ---
@@ -191,7 +218,7 @@ To indicate a line break end a line with two spaces (in our example indicated us
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         We make line breaks, by ending a line with two spaces.++ <!-- + means a space -->
         This line will show below the other.
         
@@ -212,7 +239,7 @@ The generated footnotes will link to each other.
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.  
         It also allows usage of HTML[^html] in it.
         
@@ -230,12 +257,12 @@ The generated footnotes will link to each other.
         Markdown[^1] is a lightweight markup language[^markup] used for creating formatted text.  
         It also allows usage of HTML[^html] in it.
         
-        [^1]: https://daringfireball.net/projects/markdown/syntax
-        [^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.
-          Source: https://en.wikipedia.org/wiki/Markup_language
-        [^html]:
-            Hypertext Markup Language.  
-            Made by the World Wide Web Consortium (W3C).
+[^1]: https://daringfireball.net/projects/markdown/syntax  
+[^markup]: In computer text processing, a markup language is a system for annotating a document in a way that is visually distinguishable from the content.  
+    Source: https://en.wikipedia.org/wiki/Markup_language  
+[^html]:
+    Hypertext Markup Language.  
+    Made by the World Wide Web Consortium (W3C).
         
 ----
 ## Lists
@@ -246,7 +273,7 @@ Starting a line with any number followed by a dot, space and text makes a new Or
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         1. This is the first entry.
         2. This is the second one.
         4. The numbers don't even have to make sense!
@@ -272,7 +299,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         - This list
         - doesn't use numbers.
         
@@ -309,7 +336,7 @@ We use pymdownx's "checklist" extension and some custom CSS to emulate the natur
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Things to do:
         
         - [x] Buy milk
@@ -340,7 +367,7 @@ Linking to a page normally is simple. Either post the link directly, or use `[te
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         You can link to sites by posting the URL: https://github.com
         
         Or you link to it as an [embedded link](https://github.com).  
@@ -359,7 +386,7 @@ You can use the same reference link at multiple places and use `[text][reference
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         [Link]: https://google.com
         [GitHub]: https://github.com
         
@@ -374,7 +401,7 @@ Images can be added the same way as links (including reference link-style), but 
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         [github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
         
         ![name][github_logo]  
@@ -398,7 +425,7 @@ To make inline code, surround the the text with a single backtick (`` ` ``).
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         This is text with some `inline code`.
         ```
         
@@ -414,7 +441,7 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
 
 !!! example
     === "Markdown"
-        ````
+        ````markdown
         This is some code block stuff  
         ```
         hello world
@@ -434,7 +461,7 @@ GitHub provides `syntax highlighting` support which means that the content withi
 
 !!! example
     === "Markdown"
-        ````
+        ````markdown
         This here is some JSON with syntax highlighting:  
         ```json
         {
@@ -465,7 +492,7 @@ Making tables in Markdown is fairly simple.
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         | Example      | One             |
         | ------------ | --------------- |
         | You can make | it look pretty! |
@@ -508,7 +535,7 @@ All available Emojis can be found on @ikatyang/emoji-cheat-sheet
 
 !!! example
     === "Markdown"
-        ```
+        ```markdown
         Valid emoji:  
         :smile:
         
@@ -522,3 +549,46 @@ All available Emojis can be found on @ikatyang/emoji-cheat-sheet
         
         Invalid emoji:  
         :some emoji:
+
+----
+## Math expressions
+GitHub supports the LaTeX format to display complex math expressions using normal text.  
+To display an expression, start surround the expression with either one or two dollar symbols (`$`) to indicate the start and end of an expression and render it inline or as separate block respectively.
+
+!!! example
+    === "Markdown"
+        ```markdown
+        Inline math: $\sqrt{3x-1}+(1+x)^2$
+        
+        
+        Cauchy-Schwarz Inequality:  
+        $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+        ```
+    
+    === "Result"
+        Inline math: $\sqrt{3x-1}+(1+x)^2$
+        
+        Cauchy-Schwarz Inequality:  
+        $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

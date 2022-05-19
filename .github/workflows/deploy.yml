@@ -15,6 +15,7 @@ on:
     - '_snippets/**'
     branches:
     - master
+  workflow_dispatch:
 
 jobs:
   build:

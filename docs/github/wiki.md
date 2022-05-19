@@ -15,12 +15,12 @@ This page lists all features that can be used inside Wikis on GitHub repositorie
 
 --8<-- "general_features.txt"
 
-- [Reference links](#reference-links)
+- [Wiki Page links](#wiki-page-links)
 
 ----
-## Reference links
-The wiki has its own unique type of reference links which is slightly different from the [other type](../general#reference).  
-That said, are [all other link types](../general#links) still usable.
+## Wiki Page links
+The Wiki pages have a unique Link patternt that can be used to link to other pages on the Wiki (optionally with a separate text to display).  
+Any other link type is also supported.
 
 You can easly link to other pages by starting a link with two opening square brackets (`[`) followed by the page name and closing it with two closing square brackets (`]`).
 
@@ -33,13 +33,18 @@ You can easly link to other pages by starting a link with two opening square bra
         Displaying an alternative text:  
         [[Main Formatting|General]]  
         [[Issues and Pull request formatting|Issues Pull requests]]
+        
+        Link to a specific section in a page:  
+        [[Reference Links|General#reference]]
         ```
         
     === "Result"
-        [[General]]  
-        [[Issues Pull requests]]
+        [General](../general)  
+        [Issues Pull requests and Discussions](../issues-pull-requests-and-discussions)
         
-        <!-- The EzLinks plugin we use sadly uses a different order -->
         Displaying an alternative text:  
-        [[General|Main Formatting]]  
-        [[Issues Pull requests|Issues and Pull request formatting]]
+        [Main Formatting](../general)  
+        [Issues, Pull requests and Discussions formatting](../issues-pull-requests-and-discussions)
+        
+        Link to a specific section in a page:  
+        [Reference Links](../general#reference)

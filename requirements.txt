@@ -1,3 +1,2 @@
 mkdocs-material==8.2.15
-mkdocs-ezlinks-plugin==0.1.14
 mkdocs-redirects

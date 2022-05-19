@@ -74,7 +74,6 @@ extra:
 
 plugins:
   - search
-  - ezlinks
   - redirects:
       redirect_maps:
         'github/issues-pull-requests.md': 'github/issues-pull-requests-and-discussions.md'
@@ -116,6 +115,7 @@ markdown_extensions:
       provider: 'github'
       user: 'Andre601'
       repo: 'GitHub-Markdown'
+      normalize_issue_symbols: true
   #- pymdownx.mark:
   #- pymdownx.pathconverter:
   #- pymdownx.progressbar:

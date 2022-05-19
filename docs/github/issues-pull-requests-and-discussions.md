@@ -87,12 +87,12 @@ You can link to issues and Pull requests in various ways.
     === "Result"
         Full URL:
         
-        - [#2](https://github.com/Andre601/GitHub-Markdown/pull/2)
-        - [jlord/sheetsee.js#26](https://github.com/jlord/sheetsee.js/issues/26)
+        - https://github.com/Andre601/GitHub-Markdown/pull/2
+        - https://github.com/jlord/sheetsee.js/issues/26
         
         Issue/Pull request number (Own repository):
         
-        - [#2](https://github.com/Andre601/GitHub-Markdown/pull/2)
+        - #2
         
         Issue/Pull request number (External repository):
         
@@ -112,7 +112,7 @@ Note, that we use an image here to display the result.
         ```
         
     === "Result"
-        ![image](file-preview.png)
+        ![image](../assets/img/file-preview.png)
 
 ----
 ## Color preview

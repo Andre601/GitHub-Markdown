@@ -28,18 +28,18 @@ Since not all features are used everywhere is the site split up into different c
 ### General
 Main Markdown formatting that can be used across GitHub.
 
-[:octicons-markdown-16: General](general.md){: .md-button }
+[:octicons-markdown-16: General](./github/general){: .md-button }
 
 ### Issues, Pull requests and Discussions
 Unique formatting options that can only be used in Issues, Pull requests and Discussions.  
 This may also include Comments on Commits and Releases but was not tested.
 
-[:octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions](issues-pull-requests-and-discussions.md){: .md-button }
+[:octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions](./github/issues-pull-requests-and-discussions){: .md-button }
 
 ### Wiki
 Unique formatting options that can only be used in Wikis.
 
-[:octicons-book-16: Wiki](wiki.md){: .md-button }
+[:octicons-book-16: Wiki](./github/wiki){: .md-button }
 
 ## Note about this site and styling
 This page uses [MkDocs] together with the [PyMdown extensions].  

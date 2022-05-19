@@ -6,12 +6,6 @@ hide:
 - toc
 ---
 
-<!-- We have the links here because MkDocs doesn't like indended reference links -->
-[Link]: https://google.com
-[GitHub]: https://github.com
-
-[github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
-
 --8<-- "nav_general.txt"
 
 # :octicons-markdown-16: General
@@ -292,7 +286,7 @@ Starting a line with any number followed by a dot, space and text makes a new Or
         ----
         
         1. To indent an entry...
-           1. ...add 3 spaces before it.
+            1. ...add 3 spaces before it.
 
 ### Unordered
 The unordered list has the same behaviour as the ordered list, with the difference that it doesn't use a number and dot, but instead either an asterisks (`*`) or a hyphen/dash (`-`)
@@ -311,7 +305,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
         ----
         
         - Unordered Lists...
-           - ...only require 2 spaces for an indent.
+          - ...only require 2 spaces for an indent.
         ```
         
     === "Result"
@@ -326,7 +320,7 @@ The unordered list has the same behaviour as the ordered list, with the differen
         ----
         
         - Unordered Lists...
-           - ...only require 2 spaces for an indent.
+            - ...only require 2 spaces for an indent.
 
 ### Task Lists
 This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
@@ -396,6 +390,9 @@ You can use the same reference link at multiple places and use `[text][reference
     === "Result"
         [Reference links][Link] can be used like that to link to sites like [GitHub]!
 
+[Link]: https://google.com
+[GitHub]: https://github.com
+
 ### Image
 Images can be added the same way as links (including reference link-style), but have an exclamation mark (`!`) before them.
 
@@ -412,6 +409,8 @@ Images can be added the same way as links (including reference link-style), but 
         ![name][github_logo]
         
         ![github_text](https://andre601.ch/GitHub-Markdown/assets/img/github-text.png)
+
+[github_logo]: https://andre601.ch/GitHub-Markdown/assets/img/github.png
 
 ----
 ## Code
@@ -570,25 +569,3 @@ To display an expression, start surround the expression with either one or two d
         
         Cauchy-Schwarz Inequality:  
         $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

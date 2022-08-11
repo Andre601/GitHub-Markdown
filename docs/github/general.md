@@ -458,6 +458,10 @@ To put text into a code block, surround it with three backticks (```` ``` ````).
 #### Syntax highlighting
 GitHub provides `syntax highlighting` support which means that the content within a codeblock can be colorized, depending on what coding language was selected.
 
+!!! note "Note"
+    GitHub supports Diagrams from Mermaid.js.  
+    To display a graph, use `mermaid` as the syntax highlighting and create the format you would use in Mermaid.js itself.
+
 !!! example
     === "Markdown"
         ````markdown

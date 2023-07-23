@@ -163,28 +163,46 @@ Note that you need an empty line between a quote and any normal text below it to
         > Once you stop learning you start dying.
 
 #### Special Quote blocks
-GitHub added a special behaviour where providing `**Note**` or `**Warning**` as the first line renders a Block quote with the first line containing an icon and text with color.
+GitHub added a feature where if a quote block starts with either `[!NOTE]`, `[!WARNING]` or `[!IMPORTANT]`, it will be rendered differently.  
+In addition will the rendered block be a `div` and not a `quoteblock`, while the text will also be default white
+
+!!! warning "Important!"
+    The syntax has to be exactly like this:
+
+    - Line starting with `>` followed by a space, `[!NOTE]`, `[!WARNING]` or `[!IMPORTANT]` and a line break (two spaces, `\` or `<br>`)
+    - New line starting with `>`, followed by a space and the actual text.
+    - Any extra line following the same pattern.
 
 !!! example
     === "Markdown"
         ```markdown
-        > **Note**  
+        >  [!NOTE]\
         > Drink water to stay hydrated!
         
         ----
         
-        > **Warning**  
+        > [!WARNING]\
         > Not drinking water regularely is unhealthy!
+
+        ----
+
+        > [!IMPORTANT]\
+        > Dirty water is not healthy either.
         ```
     
     === "Result"
-        > <span class="color-accent-fg">:octicons-info-24: Info</span>  
-        > Drink water to stay hydrated!
+        > <span style="color: #2F81F7">:octicons-info-24: Info</span>  
+        > <span style="color: var(--md-default-fg-color)">Drink water to stay hydrated!</span>
         
         ----
         
-        > <span class="color-attention-fg">:octicons-alert-24: Warning</span>  
-        > Not drinking water regularely is unhealthy!
+        > <span style="color: #D29922">:octicons-alert-24: Warning</span>  
+        > <span style="color: var(--md-default-fg-color)">Not drinking water regularely is unhealthy!</span>
+
+        ----
+
+        > <span style="color: #a371f7">:octicons-report-24: Important</span>  
+        > <span style="color: var(--md-default-fg-color)">Dirty water is not healthy either.</span>
 
 ### Horizontal rule
 Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will create a horizontal rule (line) which goes accross the entire text area.

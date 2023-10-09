@@ -1,6 +1,4 @@
-.md-typeset a {
-  color: #3498db;
-}
+
 
 .md-typeset .md-button {
     color: #3498db;
@@ -35,4 +33,13 @@
 
 .color-attention-fg {
     color: #d29922;
+}
+
+.md-typeset a > .gh-link-number {
+    color: var(--md-default-fg-color--light);
+    transition: color 125ms;
+}
+
+.md-typeset a:hover > .gh-link-number {
+    color: var(--md-accent-fg-color);
 }

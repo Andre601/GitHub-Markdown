@@ -6,38 +6,10 @@ hide:
 - toc
 ---
 
---8<-- "nav_general.txt"
-
 # :octicons-markdown-16: General
 This page lists all features that can be used across all places on GitHub, which support markdown formatting.
 
-- [Headers](#headers)
-- [Text formatting](#text-formatting)
-    - [Italic](#italic)
-    - [Bold](#bold)
-    - [Strikethrough](#strikethrough)
-    - [Combinations](#combinations)
-    - [Quotes](#quotes)
-        - [Special Quote blocks](#special-quote-blocks)
-    - [Horizontal rule](#horizontal-rule)
-    - [Line breaks](#line-breaks)
-    - [Footnotes](#footnotes)
-- [Lists](#lists)
-    - [Ordered](#ordered)
-    - [Unordered](#unordered)
-    - [Task lists](#task-lists)
-        - [Unique behaviour of Task Lists](#unique-behaviour-of-task-lists)
-- [Links](#links)
-    - [Normal](#normal)
-    - [Reference](#reference)
-    - [Image](#image)
-- [Code](#code)
-    - [Inline code](#inline-code)
-    - [Code Block](#code-block)
-        - [Syntax highlighting](#syntax-highlighting)
-- [Tables](#tables)
-- [Emojis](#emojis)
-- [Math Expressions](#math-expressions)
+--8<-- "toc.txt"
 
 ----
 ## Headers
@@ -64,21 +36,21 @@ Headers are larger text like shown above and also allow you to link to it, when 
         ```
         
     === "Result"
-        # H1 Header
-        ## H2 Header
-        ### H3 Header
-        #### H4 Header
-        ##### H5 Header
-        ###### H6 Header
+        <!-- We use html tags to avoid the ToC generator from including them -->
+        
+        <h1>H1 Header</h1>
+        <h2>H2 Header</h2>
+        <h3>H3 Header</h3>
+        <h4>H4 Header</h4>
+        <h5>H5 Header</h5>
+        <h6>H6 Header</h6>
         
         ----
         Alternative Headers (H1 and H2 only)
         
-        Alt H1 Header
-        ======
+        <h1>Alt H1 Header</h1>
         
-        Alt H2 Header
-        ------
+        <h2>Alt H2 Header</h2>
 
 ----
 ## Text formatting
@@ -167,11 +139,14 @@ GitHub added a feature where if a quote block starts with either `[!NOTE]`, `[!W
 In addition will the rendered block be a `div` and not a `quoteblock`, while the text will also be default white
 
 !!! warning "Important!"
-    The syntax has to be exactly like this:
+    
+    - The first line needs to be `> ` followed by `[!NOTE]`, `[!WARNING]` or `[!IMPORTANT]`. Any text to display needs to be on a new line using the quote-pattern.
+    - This feature is currently not available in [the wiki](wiki.md).
 
-    - Line starting with `>` followed by a space, `[!NOTE]`, `[!WARNING]` or `[!IMPORTANT]` and a line break (two spaces, `\` or `<br>`)
-    - New line starting with `>`, followed by a space and the actual text.
-    - Any extra line following the same pattern.
+!!! extensions "MkDocs Extensions"
+    - [Python Markdown's Admonition][admonition-extension]{ target="_blank" rel="nofollow" } (Uses custom CSS)
+
+[admonition-extension]: https://python-markdown.github.io/extensions/admonition/
 
 !!! example
     === "Markdown"
@@ -191,18 +166,18 @@ In addition will the rendered block be a `div` and not a `quoteblock`, while the
         ```
     
     === "Result"
-        > <span style="color: #2F81F7">:octicons-info-24: Info</span>  
-        > <span style="color: var(--md-default-fg-color)">Drink water to stay hydrated!</span>
+        !!! gh-note "Note"
+            Drink water to stay hydrated!
         
         ----
         
-        > <span style="color: #D29922">:octicons-alert-24: Warning</span>  
-        > <span style="color: var(--md-default-fg-color)">Not drinking water regularely is unhealthy!</span>
-
+        !!! gh-warning "Warning"
+            Not drinking water regularely is unhealthy!
+        
         ----
-
-        > <span style="color: #a371f7">:octicons-report-24: Important</span>  
-        > <span style="color: var(--md-default-fg-color)">Dirty water is not healthy either.</span>
+        
+        !!! gh-important "Important"
+            Dirty water is not healthy either.
 
 ### Horizontal rule
 Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will create a horizontal rule (line) which goes accross the entire text area.
@@ -213,17 +188,17 @@ Using three or more hyphens (`-`), astersisks (`*`) or underscores (`_`) will cr
         Use three or more hyphens, asterisks or underscores to make a line
         
         ---
-        But keep an empty line between text and the hyphens below it or it becomes a h2 header!
+        But make sure there is no text directly above them or it will be converted to a H2 Header!
         ```
         
     === "Result"
         Use three or more hyphens, asterisks or underscores to make a line
         
         ---
-        But keep an empty line between text and the hyphens below it or it becomes a h2 header!
+        But make sure there is no text directly above them or it will be converted to a H2 Header!
 
 ### Line breaks
-To indicate a line break end a line with two spaces (in our example indicated using a plus (`+`) symbol).
+To indicate a line break, end a line with two spaces (indicated below using `◦`), a backslash (`\`) or a `<br>` html tag.
 
 !!! note
     Issues and Pull requests don't require two spaces at the end for line breaks.
@@ -231,7 +206,7 @@ To indicate a line break end a line with two spaces (in our example indicated us
 !!! example
     === "Markdown"
         ```markdown
-        We make line breaks, by ending a line with two spaces.++ <!-- + means a space -->
+        We make line breaks, by ending a line with two spaces.◦◦
         This line will show below the other.
         
         For a new paragraph, leave an empty line in between.
@@ -248,6 +223,11 @@ The footnote syntax allows you to link text or URLs without destroying the text'
 To use a footnote, simply use `[^n]` - where `n` is a number or text to use - in the place you want a footnote to be placed and use `[^n]: <text>` to make a link.
 
 The generated footnotes will link to each other.
+
+!!! extensions "MkDocs Extensions"
+    - [Python Markdown's Footnotes extension][footnotes-extension]{ target="_blank" rel="nofollow" }
+
+[footnotes-extension]: https://python-markdown.github.io/extensions/footnotes/
 
 !!! example
     === "Markdown"
@@ -341,10 +321,13 @@ The unordered list has the same behaviour as the ordered list, with the differen
             - ...only require 2 spaces for an indent.
 
 ### Task Lists
-This is a GitHub exclusive feature, where you can make checklists using `- [ ]` as format.  
-To "check" an entry, will you only need to replace the space in between the brackets with an x.
+Adding a `[ ]` after a hyphon or asterisks followed by text will create a task list item.  
+This task list item is "unchecked" (Shows an empty box) but can be "checked" by using `[x]` instead.
 
-We use pymdownx's "checklist" extension and some custom CSS to emulate the natural feel
+!!! extensions "MkDocs Extensions"
+    - [PyMdownX's tasklist extension][tasklist-extension]{ target="_blank" rel="nofollow" } (Uses custom CSS)
+
+[tasklist-extension]: https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
 
 !!! example
     === "Markdown"
@@ -525,8 +508,7 @@ Making tables in Markdown is fairly simple.
         ----
         Text alignment.
         
-        <!-- MkDocs also changes alignment of titles. This isn't the case with GitHub -->
-        | Titles  | are                    | always    | centered      |
+        | Title 1 | Title 2                | Title 3   | Title 4       |
         | ------- |:---------------------- |:---------:| -------------:|
         | default | Left (Same as default) | Centered  | Right         |
         ```
@@ -543,9 +525,9 @@ Making tables in Markdown is fairly simple.
         ----
         Text alignment.
          
-        | Titles  | are                    | always    | centered      |
-        | ------- |:---------------------- |:---------:| -------------:|
-        | default | Left (Same as default) | Centered  | Right         |
+        | Title 1 { style="text-align: center;" } | Title 2 { style="text-align: center;" } | Title 3 { style="text-align: center;" } | Title 4 { style="text-align: center;" } |
+        |-----------------------------------------|:----------------------------------------|:---------------------------------------:|----------------------------------------:|
+        | default                                 | Left (Same as default)                  | Centered                                | Right                                   |
 
 ----
 ## Emojis
@@ -553,6 +535,11 @@ GitHub allows to render emojis.
 A emoji is defined using a starting colon (`:`) followed by any alphanummerical text, hyphens (`-`) and underscores (`_`) amd ends with anothor colon.
 
 All available Emojis can be found on @ikatyang/emoji-cheat-sheet
+
+!!! extensions "MkDocs Extensions"
+    - [PyMdownX's Emoji Extension][emoji-extension]{ target="_blank" rel="nofollow" }
+
+[emoji-extension]: https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
 
 !!! example
     === "Markdown"
@@ -574,7 +561,12 @@ All available Emojis can be found on @ikatyang/emoji-cheat-sheet
 ----
 ## Math expressions
 GitHub supports the LaTeX format to display complex math expressions using normal text.  
-To display an expression, start surround the expression with either one or two dollar symbols (`$`) to indicate the start and end of an expression and render it inline or as separate block respectively.
+To display an expression, surround the expression with either one or two dollar symbols (`$`) to indicate the start and end of an expression and render it inline or as separate block respectively.
+
+!!! extensions "MkDocs Extensions"
+    - [PyMdownX's Arithmatex Extension][arithmatex-extension]{ target="_blank" rel="nofollow" }
+
+[arithmatex-extension]: https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
 
 !!! example
     === "Markdown"
@@ -582,12 +574,14 @@ To display an expression, start surround the expression with either one or two d
         Inline math: $\sqrt{3x-1}+(1+x)^2$
         
         
-        Cauchy-Schwarz Inequality:  
+        Cauchy-Schwarz Inequality:
+        
         $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
         ```
     
     === "Result"
         Inline math: $\sqrt{3x-1}+(1+x)^2$
         
-        Cauchy-Schwarz Inequality:  
+        Cauchy-Schwarz Inequality:
+        
         $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$

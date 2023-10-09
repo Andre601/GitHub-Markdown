@@ -7,15 +7,14 @@ hide:
 ---
 
 [general]: https://andre601.ch
-
---8<-- "nav_wiki.txt"
     
 # :octicons-book-16: Wiki
 This page lists all features that can be used inside Wikis on GitHub repositories.
 
---8<-- "general_features.txt"
-
-- [Wiki Page links](#wiki-page-links)
+--8<--
+general_features.txt
+toc.txt
+--8<--
 
 ----
 ## Wiki Page links
@@ -27,24 +26,24 @@ You can easly link to other pages by starting a link with two opening square bra
 !!! example
     === "Markdown"
         ```
-        [[General]]  
-        [[Issues Pull requests]]
+        [[general]]  
+        [[issues-pull-requests-and-discussions]]
         
         Displaying an alternative text:  
-        [[Main Formatting|General]]  
-        [[Issues and Pull request formatting|Issues Pull requests]]
+        [[Main Formatting|general]]  
+        [[Issues, Pull requests and Discussions formatting|issues-pull-requests-and-discussions]]
         
         Link to a specific section in a page:  
-        [[Reference Links|General#reference]]
+        [[Reference Links|general#reference]]
         ```
         
     === "Result"
-        [General](../general)  
-        [Issues Pull requests and Discussions](../issues-pull-requests-and-discussions)
+        [general](general.md)  
+        [issues-pull-requests-and-discussions](issues-pull-requests-and-discussions.md)
         
         Displaying an alternative text:  
-        [Main Formatting](../general)  
-        [Issues, Pull requests and Discussions formatting](../issues-pull-requests-and-discussions)
+        [Main Formatting](general.md)  
+        [Issues, Pull requests and Discussions formatting](issues-pull-requests-and-discussions.md)
         
         Link to a specific section in a page:  
-        [Reference Links](../general#reference)
+        [Reference Links](general.md#reference)

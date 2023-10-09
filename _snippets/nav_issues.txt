@@ -1,2 +1,0 @@
-!!! pages "Pages"
-    [:octicons-markdown-16: General](general.md){: .md-button } [:octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions](){: .md-button .md-button--primary } [:octicons-book-16: Wiki](wiki.md){: .md-button }

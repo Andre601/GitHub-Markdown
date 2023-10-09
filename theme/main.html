@@ -41,3 +41,24 @@
     <title>{{ config.site_name }}</title>
   {% endif %}
 {% endblock %}
+
+{% block content %}
+  {% if page.url.startswith("github/") %}
+    <div class="admonition pages">
+      <p class="admonition-title">Pages</p>
+      <p>
+        {% for p in nav.pages %}
+          {% if p.url.startswith("github/") %}
+            {% set classes = "md-button" %}
+            {% if p.url == page.url %}
+              {% set classes = classes ~ " md-button--primary" %}
+            {% endif %}
+            <a class="{{ classes }}" href="{{ p.url | url }}">{{ p.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  {% endif %}
+  
+  {{ super() }}
+{% endblock %}

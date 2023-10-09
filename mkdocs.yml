@@ -24,6 +24,10 @@ nav:
     - "Issues, Pull requests and Discussions": github/issues-pull-requests-and-discussions.md
     - Wiki: github/wiki.md
 
+watch:
+  - theme
+  - _snippets
+
 theme:
   name: 'material'
   #
@@ -50,7 +54,21 @@ theme:
   #
   # https://squidfunk.github.io/mkdocs-material/getting-started/#icons
   icon:
-    repo: 'fontawesome/brands/github'
+    repo: 'simple/github'
+    admonition:
+      note: octicons/pencil-24
+      abstract: octicons/paste-24
+      info: octicons/info-24
+      tip: octicons/light-bulb-24
+      success: octicons/check-24
+      question: octicons/question-24
+      warning: octicons/alert-24
+      failure: octicons/x-24
+      danger: octicons/zap-24
+      bug: octicons/bug-24
+      example: octicons/beaker-24
+      quote: octicons/comment-24
+    
 
 #
 # You can uncomment this line together with one of the below lines to add custom CSS to the documentation.
@@ -82,10 +100,9 @@ markdown_extensions:
   - attr_list:
   - meta:
   - markdown.extensions.admonition:
-  - markdown.extensions.codehilite:
-      guess_lang: false
   - markdown.extensions.toc:
       permalink: true
+      toc_depth: 2-6
   - markdown.extensions.footnotes:
   #
   # Uncomment the PyMdown extension you want to use.
@@ -99,14 +116,17 @@ markdown_extensions:
   #- pymdownx.betterem:
   #- pymdownx.caret:
   #- pymdownx.critic:
-  #- pymdownx.details:
+  - pymdownx.details:
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   #- pymdownx.escapeall:
   #- pymdownx.extra:
   #- pymdownx.extrarawhtml:
-  #- pymdownx.highlight:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   #- pymdownx.inlinehilite:
   #- pymdownx.keys:
   - pymdownx.magiclink:

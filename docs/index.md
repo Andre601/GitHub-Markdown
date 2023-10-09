@@ -1,13 +1,13 @@
 ---
 title: GitHub Markdown
-description: This page tries to list everything about basic markdown and GitHub flavourited Markdown (GFM)
+description: A page trying to list all the available Markdown options within &quot;GitHub flavourited Markdown&quot; (GFM).
 hide:
 - navigation
 - toc
 ---
 
-[MkDocs]: https://www.mkdocs.org
-[PyMdown extensions]: https://facelessuser.github.io/pymdown-extensions/
+[mkdocs]: https://www.mkdocs.org
+[pymdownx]: https://facelessuser.github.io/pymdown-extensions/
 
 # GitHub Markdown
 Welcome to the GitHub Markdown site!
@@ -25,22 +25,22 @@ Markdown can be used on multiple places, including but not limited to:
 ## Pages
 Since not all features are used everywhere is the site split up into different categories to cover them as good as possible.
 
-### General
+### :octicons-markdown-16: General
 Main Markdown formatting that can be used across GitHub.
 
-[:octicons-markdown-16: General](./github/general){: .md-button }
+[:octicons-arrow-right-24: Go to Page](github/general.md){: .md-button }
 
-### Issues, Pull requests and Discussions
+### :octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions
 Unique formatting options that can only be used in Issues, Pull requests and Discussions.  
 This may also include Comments on Commits and Releases but was not tested.
 
-[:octicons-issue-opened-16: Issues, :octicons-git-pull-request-16: Pull requests and :octicons-comment-discussion-16: Discussions](./github/issues-pull-requests-and-discussions){: .md-button }
+[:octicons-arrow-right-24: Go to Page](github/issues-pull-requests-and-discussions.md){: .md-button }
 
-### Wiki
+### :octicons-book-16: Wiki
 Unique formatting options that can only be used in Wikis.
 
-[:octicons-book-16: Wiki](./github/wiki){: .md-button }
+[:octicons-arrow-right-24: Go to Page](github/wiki.md){: .md-button }
 
 ## Note about this site and styling
-This page uses [MkDocs] together with the [PyMdown extensions].  
-PyMdown extensions provides certain features that help us to emulate some of GitHub's features like task lists. That said is the style often not the same so it may look different to what GitHub offers. If the style or behaviour is different on GitHub will we mention it.
+This page uses [MkDocs][mkdocs] together with the [PyMdown extensions][pymdownx] and various CSS changes.  
+PyMdown extensions provides certain features that help us to emulate some of GitHub's features like task lists. That said is the style often not the same so it may look different to what GitHub offers. We try to copy the overall feel as closely as possible but cannot guarantee it.

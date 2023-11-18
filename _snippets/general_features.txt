@@ -1,2 +1,3 @@
-!!! info "General Features"
-    [:octicons-markdown-16: General features](general.md) are supported.
+/// info | General Features
+[:octicons-markdown-16: General features](general.md) are supported.
+///

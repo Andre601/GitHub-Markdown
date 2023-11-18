@@ -23,27 +23,30 @@ Any other link type is also supported.
 
 You can easly link to other pages by starting a link with two opening square brackets (`[`) followed by the page name and closing it with two closing square brackets (`]`).
 
-!!! example
-    === "Markdown"
-        ```
-        [[general]]  
-        [[issues-pull-requests-and-discussions]]
-        
-        Displaying an alternative text:  
-        [[Main Formatting|general]]  
-        [[Issues, Pull requests and Discussions formatting|issues-pull-requests-and-discussions]]
-        
-        Link to a specific section in a page:  
-        [[Reference Links|general#reference]]
-        ```
-        
-    === "Result"
-        [general](general.md)  
-        [issues-pull-requests-and-discussions](issues-pull-requests-and-discussions.md)
-        
-        Displaying an alternative text:  
-        [Main Formatting](general.md)  
-        [Issues, Pull requests and Discussions formatting](issues-pull-requests-and-discussions.md)
-        
-        Link to a specific section in a page:  
-        [Reference Links](general.md#reference)
+//// example
+/// tab | Markdown
+```
+[[general]]
+[[issues-pull-requests-and-discussions]]
+
+Displaying an alternative text:
+[[Main Formatting|general]]
+[[Issues, Pull requests and Discussions formatting|issues-pull-requests-and-discussions]]
+
+Link to a specific section in a page:
+[[Reference Links|general#reference]]
+```
+///
+
+/// tab | Result
+[general](general.md)  
+[issues-pull-requests-and-discussions](issues-pull-requests-and-discussions.md)
+
+Displaying an alternative text:  
+[Main Formatting](general.md)  
+[Issues, Pull requests and Discussions formatting](issues-pull-requests-and-discussions.md)
+
+Link to a specific section in a page:  
+[Reference Links](general.md#reference)
+///
+////

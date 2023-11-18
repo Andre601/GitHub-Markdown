@@ -51,7 +51,7 @@
           {% if p.url.startswith("github/") %}
             {% set classes = "md-button" %}
             {% if p.url == page.url %}
-              {% set classes = classes ~ " md-button--primary" %}
+              {% set classes = classes ~ " md-button--selected" %}
             {% endif %}
             <a class="{{ classes }}" href="{{ p.url | url }}">{{ p.title }}</a>
           {% endif %}

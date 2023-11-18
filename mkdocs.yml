@@ -1,9 +1,8 @@
 site_name: GitHub Markdown
 site_description: 'A website listing all formatting options available on GitHub.'
 site_author: 'Andre_601'
+site_url: 'https://docs.andre601.ch/GitHub-Markdown/'
 
-#
-# This section uses normal HTML, so normal HTML tags and specific text like &copy; are supported
 copyright: |
   Author: Andre_601 | Shared under the <a href="https://github.com/Andre601/GitHub-Markdown/blob/master/LICENSE" target="_blank">MIT License</a>
   <br>The GitHub icon is a registered Icon owned by GitHub Inc.
@@ -11,11 +10,8 @@ copyright: |
 
 docs_dir: docs/
 
-#
-# These three options are optional.
 repo_name: Andre601/GitHub-Markdown
 repo_url: https://github.com/Andre601/GitHub-Markdown
-#edit_uri: tree/master/docs # If you want the Edit option/URL to be different.
 
 nav:
   - Welcome: index.md
@@ -30,29 +26,16 @@ watch:
 
 theme:
   name: 'material'
-  #
-  # Uncomment the below option to use the "theme extension" option
-  # to customize certain aspects of the Material Theme.
-  #
   custom_dir: 'theme'
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#favicon
   favicon: 'assets/img/logo.png'
   logo: 'assets/img/logo.png'
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#color-palette
   palette:
-    scheme: 'slate'
+    scheme: 'github'
     primary: 'indigo'
     accent: 'indigo'
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#feature-flags
   features:
-    #- instant
     - navigation.tabs
     - navigation.top
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#icons
   icon:
     repo: 'simple/github'
     admonition:
@@ -68,10 +51,7 @@ theme:
       bug: octicons/bug-24
       example: octicons/beaker-24
       quote: octicons/comment-24
-    
 
-#
-# You can uncomment this line together with one of the below lines to add custom CSS to the documentation.
 extra_css:
   - 'assets/css/extra.css'
 
@@ -81,14 +61,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#adding-social-links
   social:
     - icon: 'fontawesome/brands/github'
       link: 'https://github.com/Andre601/GitHub-Markdown'
-  #
-  # https://squidfunk.github.io/mkdocs-material/getting-started/#adding-a-web-app-manifest
-  #manifest: manifest.webmanifest
 
 plugins:
   - search
@@ -99,36 +74,14 @@ plugins:
 markdown_extensions:
   - attr_list:
   - meta:
-  - markdown.extensions.admonition:
   - markdown.extensions.toc:
       permalink: true
       toc_depth: 2-6
   - markdown.extensions.footnotes:
-  #
-  # Uncomment the PyMdown extension you want to use.
-  # Note that some might need additional settings to be added.
-  #
-  # Refer to the official documentation for more info:
-  # - https://facelessuser.github.io/pymdown-extensions/
-  #
-  #- pymdownx.arithmex:
-  #- pymdownx.b64:
-  #- pymdownx.betterem:
-  #- pymdownx.caret:
-  #- pymdownx.critic:
-  - pymdownx.details:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  #- pymdownx.escapeall:
-  #- pymdownx.extra:
-  #- pymdownx.extrarawhtml:
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  #- pymdownx.inlinehilite:
-  #- pymdownx.keys:
   - pymdownx.magiclink:
       repo_url_shortener: true
       repo_url_shorthand: true
@@ -136,16 +89,9 @@ markdown_extensions:
       user: 'Andre601'
       repo: 'GitHub-Markdown'
       normalize_issue_symbols: true
-  #- pymdownx.mark:
-  #- pymdownx.pathconverter:
-  #- pymdownx.progressbar:
-  #- pymdownx.smartsymbols:
   - pymdownx.snippets:
       base_path: _snippets
-  #- pymdownx.striphtml:
   - pymdownx.superfences:
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: false
@@ -153,3 +99,20 @@ markdown_extensions:
   - pymdownx.saneheaders:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.blocks.admonition:
+      types:
+        - info
+        - note
+        - tip
+        - example
+        - warning
+        - extensions
+        - pages
+        - gh-note
+        - gh-tip
+        - gh-important
+        - gh-warning
+        - gh-caution
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.blocks.details:

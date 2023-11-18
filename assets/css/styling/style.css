@@ -1,13 +1,191 @@
-
-
-.md-typeset .md-button {
-    color: #3498db;
+[data-md-color-scheme="github"] {
+    --md-default-fg-color--light: #7d8590;
+    --md-default-fg-color--lighter: #30363d;
+    --md-default-fg-color--lightest: #e6edf3;
+    --md-default-bg-color: #0d1117;
+    
+    --md-primary-fg-color: #24292f;
+    --md-primary-bg-color: #0d1117;
+    --md-primary-bg-color--light: #0d1117b3;
+    
+    --md-accent-bg-color: #0d1117;
+    --md-accent-bg-color--light: #0d1117b3;
+    
+    --md-typeset-color: #e6edf3;
+    
+    --md-typeset-h1-color--border: #21262d;
+    --md-typeset-h6-color: #7d8590;
+    
+    --md-typeset-hr-color: #30363d;
+    
+    --md-typeset-a-color: #2f81f7;
+    
+    --md-typeset-table-color: #30363d;
+    
+    --md-code-fg-color: var(--md-typeset-color);
+    --md-code-bg-color: #161b22;
+    --md-code-bg-color--inline: #6e768166;
+    --md-code-hl-generic-color: var(--md-typeset-color);
+    --md-code-hl-k-color: #7ee787;
+    --md-code-hl-variable-color: #a5d6ff;
+    --md-code-hl-keyword-color: #7ee787;
+    --md-code-hl-string-color: #a5d6ff;
+    --md-code-hl-punctuation-color: #e6edf3;
+    
+    --md-admonition-bg-color: var(--md-default-bg-color);
+    
+    --md-button-border-color: #f0f6fc1a;
+    --md-button-border-color--hover: #8b949e;
+    --md-button-bg-color: #21262d;
+    --md-button-bg-color--hover: #30363d;
+    
+    --md-button-selected-border-color: #f0f6fc1a;
+    --md-button-selected-bg-color: #238636;
+    --md-button-selected-bg-color--hover: #2ea043;
 }
 
-.md-typeset .md-button--primary {
-    color: var(--md-primary-bg-color);
-    background-color: #3498db;
-    border-color: #3498db;
+@media screen {
+    .js .md-typeset .tabbed-labels::before {
+        background: var(--md-typeset-color);
+    }
+    .md-typeset .tabbed-set > input:first-child:checked ~ .tabbed-labels > :first-child,
+    .md-typeset .tabbed-set > input:nth-child(10):checked ~ .tabbed-labels > :nth-child(10),
+    .md-typeset .tabbed-set > input:nth-child(11):checked ~ .tabbed-labels > :nth-child(11),
+    .md-typeset .tabbed-set > input:nth-child(12):checked ~ .tabbed-labels > :nth-child(12),
+    .md-typeset .tabbed-set > input:nth-child(13):checked ~ .tabbed-labels > :nth-child(13),
+    .md-typeset .tabbed-set > input:nth-child(14):checked ~ .tabbed-labels > :nth-child(14),
+    .md-typeset .tabbed-set > input:nth-child(15):checked ~ .tabbed-labels > :nth-child(15),
+    .md-typeset .tabbed-set > input:nth-child(16):checked ~ .tabbed-labels > :nth-child(16),
+    .md-typeset .tabbed-set > input:nth-child(17):checked ~ .tabbed-labels > :nth-child(17),
+    .md-typeset .tabbed-set > input:nth-child(18):checked ~ .tabbed-labels > :nth-child(18),
+    .md-typeset .tabbed-set > input:nth-child(19):checked ~ .tabbed-labels > :nth-child(19),
+    .md-typeset .tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > :nth-child(2),
+    .md-typeset .tabbed-set > input:nth-child(20):checked ~ .tabbed-labels > :nth-child(20),
+    .md-typeset .tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > :nth-child(3),
+    .md-typeset .tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > :nth-child(4),
+    .md-typeset .tabbed-set > input:nth-child(5):checked ~ .tabbed-labels > :nth-child(5),
+    .md-typeset .tabbed-set > input:nth-child(6):checked ~ .tabbed-labels > :nth-child(6),
+    .md-typeset .tabbed-set > input:nth-child(7):checked ~ .tabbed-labels > :nth-child(7),
+    .md-typeset .tabbed-set > input:nth-child(8):checked ~ .tabbed-labels > :nth-child(8),
+    .md-typeset .tabbed-set > input:nth-child(9):checked ~ .tabbed-labels > :nth-child(9) {
+        color: var(--md-typeset-color);
+    }
+}
+
+.md-typeset {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+    border-bottom: 1px solid var(--md-typeset-h1-color--border);
+}
+
+.md-typeset h1 {
+    color: var(--md-typeset-color);
+    font-size: 2em;
+}
+
+.md-typeset h2 {
+    padding-bottom: .3em;
+    font-size: 1.5em;
+}
+
+.md-typeset h3 {
+    font-size: 1.25em;
+}
+
+.md-typeset h4 {
+    font-size: 1em;
+}
+
+.md-typeset h5 {
+    color: var(--md-typeset-color);
+    font-size: .875em;
+    text-transform: none;
+}
+
+.md-typeset h6 {
+    color: var(--md-typeset-h6-color);
+    font-size: .85em;
+}
+
+.md-typeset hr {
+    height: .24em;
+    border-bottom: .24em solid var(--md-typeset-hr-color);
+}
+
+.md-typeset a {
+    text-decoration: underline;
+}
+
+.md-typeset a:hover,
+.md-typeset a:visited {
+    color: var(--md-typeset-a-color);
+}
+
+.md-typeset table:not([class]) {
+    font-size: 16px;
+    
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    
+    margin-top: 0;
+    margin-bottom: 16px;
+    
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.md-typeset table:not([class]) tr {
+    border-top: 1px solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) th {
+    font-weight: 600;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+    padding: 6px 13px;
+    border: 1px solid var(--md-typeset-table-color);
+}
+
+.md-typeset table:not([class]) td:not([align]),
+.md-typeset table:not([class]) th:not([align]) {
+    text-align: center;
+}
+
+.md-typeset code {
+    background-color: var(--md-code-bg-color--inline);
+}
+
+.md-typeset pre > code {
+    background-color: var(--md-code-bg-color);
+}
+
+.md-typeset code .k {
+    color: var(--md-code-hl-k-color);
+}
+
+.md-header {
+    color: var(--md-typeset-color);
 }
 
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
@@ -15,31 +193,103 @@
     height: 2.4rem;
 }
 
-.color-merged {
-    color: #A371F7;
+.md-search__form {
+    background-color: var(--md-typeset-h1-color--border);
 }
 
-.color-opened {
-    color: #3FB950;
+.md-search__input::placeholder {
+    color: var(--md-typeset-color);
 }
 
-.color-neutral {
-    color: #8B949E;
+.md-search__input + .md-search__icon {
+    color: var(--md-typeset-color);
 }
 
-.color-accent-fg {
-    color: #58a6ff;
+.md-tabs {
+    color: var(--md-typeset-color);
 }
 
-.color-attention-fg {
-    color: #d29922;
+.md-typeset .headerlink,
+.md-typeset .headerlink:hover {
+    color: var(--md-typeset-color);
 }
 
-.md-typeset a > .gh-link-number {
+.md-typeset .admonition,
+.md-typeset details {
+    color: var(--md-typeset-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.md-typeset .tabbed-labels {
+    box-shadow: 0 -.05rem var(--md-border-color-muted);
+}
+
+.md-typeset .tabbed-labels > label,
+.md-typeset .tabbed-labels > label:hover {
+    color: var(--md-typeset-color);
+}
+
+.md-typeset .md-button,
+.md-typeset a.md-button:visited {
+    color: var(--md-typeset-color);
+    border: 1px solid var(--md-button-border-color);
+    border-radius: 6px;
+    
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    
+    text-align: center;
+    align-items: center;
+    
+    height: 32px;
+    padding: 0 12px;
+    padding-top: 5px;
+    
+    background-color: var(--md-button-bg-color);
+    
+    transition: 80ms;
+}
+
+.md-typeset a.md-button:hover {
+    color: var(--md-typeset-color);
+    background-color: var(--md-button-bg-color--hover);
+    border-color: var(--md-button-border-color--hover);
+}
+
+.md-typeset .md-button.md-button--selected,
+.md-typeset a.md-button.md-button--selected:visited {
+    background-color: var(--md-button-selected-bg-color);
+    border-color: var(--md-button-border-color);
+}
+
+.md-typeset a.md-button.md-button--selected:hover {
+    background-color: var(--md-button-selected-bg-color--hover);
+    border-color: var(--md-button-border-color);
+}
+
+/*
+ * Used for the link example in "Issues, Pull requests and discussions"
+ */
+.md-typeset a > * .gh-link-number {
     color: var(--md-default-fg-color--light);
+    text-decoration: none;
     transition: color 125ms;
 }
 
-.md-typeset a:hover > .gh-link-number {
-    color: var(--md-accent-fg-color);
+.md-typeset a:hover > * .gh-link-number {
+    color: var(--md-typeset-a-color);
+}
+
+.color-merged {
+    color: #a371f7;
+}
+
+.color-opened {
+    color: #3fb950;
+}
+
+.color-neutral {
+    color: #8b949e;
 }

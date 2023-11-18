@@ -12,6 +12,8 @@
         <meta name="author" content="Andre_601">
       
       
+        <link rel="canonical" href="https://docs.andre601.ch/GitHub-Markdown/github/issues-pull-requests-and-discussions/">
+      
       
         <link rel="prev" href="../general/">
       
@@ -113,7 +115,7 @@
   <meta name="theme-color" content="#181717">
   
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="None" />
+  <meta property="og:url" content="https://docs.andre601.ch/GitHub-Markdown/github/issues-pull-requests-and-discussions/" />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/264423544/fd677980-983f-11ea-95d4-04460cbdacaa" />
   <meta property="og:image:type" content="image/png" />
   
@@ -129,7 +131,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="github" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -645,7 +647,7 @@
             
               
             
-            <a class="md-button md-button--primary" href="./">Issues, Pull requests and Discussions</a>
+            <a class="md-button md-button--selected" href="./">Issues, Pull requests and Discussions</a>
           
         
           
@@ -687,49 +689,46 @@
 </div>
 <hr />
 <h2 id="link-shortening">Link shortening<a class="headerlink" href="#link-shortening" title="Permanent link">&para;</a></h2>
-<p>GitHub automatically shortens/alters a list of specific URL-patterns to have it more easy to read.</p>
-<div class="admonition extensions">
-<p class="admonition-title">MkDocs Extensions</p>
-<ul>
-<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">PyMdownX's MagicLink extension</a> (Applies to all URLs in these docs)</li>
-</ul>
+<div class="admonition extensions inline end">
+<p class="admonition-title">MkDocs Extensions used</p>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/" rel="nofollow" target="_blank">PyMdownx's MagicLink Extension</a></p>
 </div>
+<p>GitHub automatically shortens/alters a list of specific URL-patterns to have it more easy to read.</p>
 <h3 id="commits">Commits<a class="headerlink" href="#commits" title="Permanent link">&para;</a></h3>
 <p>Posting a commit URL will automatically shorten it depending on some conditions.<br />
 When the URL points to a commit in the same repo, will it be changed to the first 7 characters of the commit SHA.<br />
 However, when the URL points to a commit of a separate repository, will the resulting text be in the form of <code>user/repo@ commit</code></p>
+<p>/// detail | Supported formats
+The following formats can be used to generate a link to a specific commit within an issue, Pull request or discussion:</p>
+<ul>
+<li><code>:commit</code> which is the full (or shortened) Commit has within the same repository.</li>
+<li><code>:user@:commit</code> which links to a commit made by <code>:user</code> on GitHub.</li>
+<li><code>:user/:repo@:commit</code> which links to a commit made in a specific repository <code>:repo</code> of user <code>:user</code> on GitHub.
+///</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<details class="tip">
-<summary>Pro-tip</summary>
-<p>You can also just provide the commit SHA in one of the following formats to link it:</p>
-<ul>
-<li><code>:commit</code> For commits within the same repository</li>
-<li><code>:user@:commit</code> For commits of User <code>:user</code></li>
-<li><code>:user/:reopo@:commit</code> For commits of User <code>:user</code> in repo <code>:repo</code></li>
-</ul>
-</details>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Markdown</label><label for="__tabbed_1_2">Result</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Same repository:
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- https://github.com/Andre601/GitHub-Markdown/commit/97c92e943f888101026473b2168c90398d92655c
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- 97c92e943f888101026473b2168c90398d92655c
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Different repository:
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- jlord/sheetsee.js@a5c3785ed8d6a35868bc169f07e40e889087fd2e
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>Same Repository:
+
+<span class="k">-</span><span class="w"> </span>https://github.com/Andre601/GitHub-Markdown/commit/97c92e943f888101026473b2168c90398d92655c
+<span class="k">-</span><span class="w"> </span>97c92e943f888101026473b2168c90398d92655c
+
+Different Repository:
+
+<span class="k">-</span><span class="w"> </span>https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e
+<span class="k">-</span><span class="w"> </span>jlord/sheetsee.js@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+</code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Same repository:</p>
+<p>Same Repository: </p>
 <ul>
 <li><a href="https://github.com/Andre601/GitHub-Markdown/commit/97c92e943f888101026473b2168c90398d92655c"><code>97c92e</code></a></li>
 <li><a href="https://github.com/Andre601/GitHub-Markdown/commit/97c92e943f888101026473b2168c90398d92655c"><code>97c92e</code></a></li>
 </ul>
-<p>Different repository:</p>
+<p>Different Repository:</p>
 <ul>
 <li><a href="https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e">jlord/sheetsee.js@<code>a5c3785</code></a></li>
 <li><a href="https://github.com/jlord/sheetsee.js/commit/a5c3785ed8d6a35868bc169f07e40e889087fd2e">jlord/sheetsee.js@<code>a5c3785</code></a></li>
@@ -745,20 +744,20 @@ However, when the URL points to a commit of a separate repository, will the resu
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Markdown</label><label for="__tabbed_2_2">Result</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Full URL:
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- https://github.com/Andre601/GitHub-Markdown/pull/2
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>- https://github.com/jlord/sheetsee.js/issues/26
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Issue/Pull request number (Own repository):
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>- #2
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>Issue/Pull request number (External repository):
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>- jlord/sheetsee.js#26  
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>- github/linguist#4039
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>Full URL:
+
+<span class="k">-</span><span class="w"> </span>https://github.com/Andre601/GitHub-Markdown/pull2
+<span class="k">-</span><span class="w"> </span>https://github.com/jlord/sheetsee.js/issues/26
+
+Issue/Pull request number (Same repository):
+
+<span class="k">-</span><span class="w"> </span><span class="ni">#2</span>
+
+Issue/Pull request number (External repository)
+
+<span class="k">-</span><span class="w"> </span>jlord/sheetsee.js#26
+<span class="k">-</span><span class="w"> </span>github/linguist#4039
+</code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Full URL:</p>
@@ -766,9 +765,9 @@ However, when the URL points to a commit of a separate repository, will the resu
 <li><a class="magiclink magiclink-github magiclink-pull" href="https://github.com/Andre601/GitHub-Markdown/pull/2" title="GitHub Pull Request: Andre601/GitHub-Markdown #2">#2</a></li>
 <li><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/jlord/sheetsee.js/issues/26" title="GitHub Issue: jlord/sheetsee.js #26">jlord/sheetsee.js#26</a></li>
 </ul>
-<p>Issue/Pull request number (Own repository):</p>
+<p>Issue/Pull request number (own repository):</p>
 <ul>
-<li><a class="magiclink magiclink-github magiclink-issue" href="https://github.com/Andre601/GitHub-Markdown/issues/2" title="GitHub Issue: Andre601/GitHub-Markdown #2">#2</a></li>
+<li><a class="magiclink magiclink-github magiclink-pull" href="https://github.com/Andre601/GitHub-Markdown/pull/2" title="GitHub Pull Request: Andre601/GitHub-Markdown #2">#2</a></li>
 </ul>
 <p>Issue/Pull request number (External repository):</p>
 <ul>
@@ -787,8 +786,8 @@ However, when the URL points to a commit of a separate repository, will the resu
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Markdown</label><label for="__tabbed_3_2">Result</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>https://github.com/Andre601/GitHub-Markdown/blob/97c92e943f888101026473b2168c90398d92655c/requirements.txt#L1
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>https://github.com/Andre601/GitHub-Markdown/blob/97c92e943f888101026473b2168c90398d92655c/requirements.txt#L1
+</code></pre></div>
 </div>
 <div class="tabbed-block">
 <table>
@@ -799,7 +798,7 @@ However, when the URL points to a commit of a separate repository, will the resu
 </thead>
 <tbody>
 <tr>
-<td style="padding: 0;"><pre><code>1 | mkdocs-material&gt;=5.0.0</code></pre></td>
+<td style="padding: 0; text-align=left;"><pre><code style="padding-left: .5rem; text-align: left;">1 | mkdocs-material&gt;=5.0.0</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -815,8 +814,8 @@ However, when the URL points to a commit of a separate repository, will the resu
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Markdown</label><label for="__tabbed_4_2">Result</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>I like green: `#16c60c`
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>I like green: <span class="sb">`#16c60c`</span>
+</code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>I like green: <code>#16c60c 🟩</code></p>
@@ -826,39 +825,44 @@ However, when the URL points to a commit of a separate repository, will the resu
 </div>
 <hr />
 <h2 id="advanced-task-lists">Advanced (task) lists<a class="headerlink" href="#advanced-task-lists" title="Permanent link">&para;</a></h2>
-<p>Whenever you link an issue, Pull request or Discussion in a list or Task list will GitHub automatically display the title, id and the current state of the issue, Pull request or Discussion.<br />
-Whenever a issue or Pull request is linked in a task list and said issue/Pull request is closed or merged will the corresponding task list entry get "checked".</p>
-<div class="admonition extensions">
-<p class="admonition-title">MkDocs Extensions</p>
-<ul>
-<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/" rel="nofollow" target="_blank">PyMdownX's tasklist extension</a> (Uses custom CSS)</li>
-<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/emoji/" rel="nofollow" target="_blank">PyMdownX's Emoji Extension</a> (Uses Material for MkDocs' icon sets)</li>
-</ul>
+<div class="admonition extensions inline end">
+<p class="admonition-title">MkDocs Extensions used</p>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/" rel="nofollow" target="_blank">PyMdownx's Tasklist Extension</a><br />
+<a href="https://facelessuser.github.io/pymdown-extensions/extensions/emoji/" rel="nofollow" target="_blank">PyMdownx's Emoji Extension</a> (Custom icons)</p>
+</div>
+<p>Whenever you link an issue, Pull request or Discussion in a list or Task list will GitHub automatically display the title, id and the current state of the issue, Pull request or Discussion.</p>
+<p>Whenever a issue or Pull request is linked in a task list and said issue/Pull request is closed or merged will the corresponding task list entry get "checked".</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of right now are links to org-level discussions (<code>https://github.com/orgs/:org/discussions/:number</code>) not working.<br />
+You can bypass this limitation by removing <code>/orgs</code> and appending the repo name after <code>:org/</code> followed by a forward slash.</p>
+<p>Example:</p>
+<p><code>https://github.com/orgs/community/discussions/4251</code> becomes <code>https://github.com/community/community/discussions/4251</code></p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Markdown</label><label for="__tabbed_5_2">Result</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Representation not 100% accurate
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>- [ ] #15
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>- #16
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>External repository:
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>- https://github.com/github/feedback/discussions/4251
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>Representation not 100% accurate
+
+<span class="k">- [ ]</span> <span class="ni">#15</span>
+<span class="k">-</span><span class="w"> </span><span class="ni">#16</span>
+
+External repository:
+
+<span class="k">-</span><span class="w"> </span>https://github.com/community/community/discussions/4251
+</code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>Representation not 100% accurate</p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/Andre601/GitHub-Markdown/pull/15"><span class="twemoji color-merged"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z"/></svg></span> <strong>Replace info with example admonition</strong> <span class="gh-link-number">#15</span></a></li>
-<li><a href="https://github.com/Andre601/GitHub-Markdown/pull/16"><span class="twemoji color-opened"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/></svg></span> <strong>Test linked PR</strong> <span class="gh-link-number">#16</span></a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <a href="https://github.com/Andre601/GitHub-Markdown/pull/15" rel="nofollow" style="text-decoration: none;" target="_blank"><span class="twemoji color-merged"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z"/></svg></span> <u><strong>Replace info with example admonition</strong> <span class="gh-link-number">#15</span></u></a></li>
+<li><a href="https://github.com/Andre601/GitHub-Markdown/pull/16" rel="nofollow" style="text-decoration: none;" target="_blank"><span class="twemoji color-opened"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"/></svg></span> <u><strong>Test linked PR</strong> <span class="gh-link-number">#16</span></u></a></li>
 </ul>
 <p>External repository:</p>
 <ul>
-<li><a href="https://github.com/github/feedback/discussions/4251"><span class="twemoji color-neutral"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg></span> <strong>The new Task List (Beta)</strong> <span class="gh-link-number">community/community#4251</span></a></li>
+<li><a href="https://github.com/github/feedback/discussions/4251" rel="nofollow" style="text-decoration: none;" target="_blank"><span class="twemoji color-neutral"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg></span> <u><strong>The new Task List (Beta)</strong> <span class="gh-link-number">community/community#4251</span></u></a></li>
 </ul>
 </div>
 </div>
